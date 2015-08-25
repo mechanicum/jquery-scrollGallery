@@ -1,0 +1,210 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<title>Пример прокрутки фотогаллереи</title>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script type="text/javascript" src="../scrollGallery.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				var gal = $('#mekRaPhotoGalPageContent').scrollGallery({
+					vertical: false,
+					body: '#mekRaPGBody1',
+					container: '#mekRaPGContainer1',
+					bodyWidth: 1591,
+					buttons: {
+						on: true,
+						leftButton: '#mekRaPGLeft1',
+						rightButton: '#mekRaPGRight1'
+					},
+					scrollingOn: true,
+					bar: {
+						on: true,
+						scroller: '#mekRaScroller1',
+						scrollBar: '#mekRaScrollerBar1',
+						scrollBarClickMoveToDirectionNotToPoint: true,
+						dragToStep: false,
+						scrollBarScrolling: false
+					}
+				});
+				$('#mekRaPhotoGalPageContent').delegate('#mekRaPGBody1', 'click', function() {
+					show(el_num);
+				});
+				$('#mekRaPhotoGalPageContent').delegate('#mekRaPGTitleA1', 'click', function() {
+					show(1);
+				});
+				function show(num) {
+					if (num > 0 && num <= 12) {
+						getCenter = $('#mekRaPhotoGallery1 #mekRaPhoto' + num + ' img').offset().left - $('#mekRaPhotoGallery1 #mekRaPGBody1').offset().left + $('#mekRaPhotoGallery1 #mekRaPhoto' + num + ' img').outerWidth() / 2 - $('#mekRaPhotoGallery1 #mekRaPGContainer1').outerWidth() / 2;
+						gal.goTo(getCenter);
+						writenewcontent = function() {
+							$('#mekRaSelectedPhoto').attr({"src": $('#mekRaPhotoGallery1 #mekRaPhoto' + num + ' img').attr('phpage')});
+							$('#mekRaImageHolder').css({'top': ($('#mekRaSelectedComment').position().top + $('#mekRaSelectedComment').outerHeight(true)) + 'px'});
+							$('#mekRaImageHolder').css({'left': $('#mekRaPhotoGalPageContent').offset().left + 'px'});
+							$('#mekRaImageHolder').css({'right': ($(window).width() - ($('#mekRaPhotoGalPageContent').offset().left + $('#mekRaPhotoGalPageContent').outerWidth())) + 'px'});
+							document.getElementById('mekRaImageHolder').innerHTML = $('#mekRaImageHolder').html();
+							$('#mekRaShowSelectedPhotoPrev').click(function() {
+								show(parseInt(num) - 1);
+							});
+							$('#mekRaShowSelectedPhotoNext').click(function() {
+								show(parseInt(num) + 1);
+							});
+							$('#mekRaGalleryBack').click(function() {
+								$('#mekRaOneGalPageContent').fadeOut(500, function() {
+									$('.mekRaPhotoGallery').fadeIn(500);
+								});
+							});
+						};
+						$('#mekRaOneGalPageContent').fadeIn(500, function() {
+							writenewcontent();
+						});
+					}
+				};
+			});
+		</script>
+		<style type="text/css">
+			#mekRaImageHolder {
+				bottom: 40px;
+				position: absolute;
+				height: auto;
+				*height: 292px;
+			}
+			#mekRaSelectedPhoto {
+				height: 100%;
+				display: inline-block;
+				*zoom: 1;
+				*display: inline;
+				-ms-interpolation-mode: bicubic;
+			}
+			#mekRaShowSelectedPhotoPrev, #mekRaShowSelectedPhotoNext {
+				display: inline-block;
+				height: 100%;
+				width: 42px;
+				background: #EE9900;
+				*zoom: 1;
+				*display: inline;
+			}
+			#mekRaSelectedComment {
+				margin-bottom: 1em;
+			}
+			.mekRaPhotoGallery .mekRaPGLeft {
+				display: inline-block;
+				height: 97px;
+				width: 13px;
+				vertical-align: top;
+				*zoom: 1;
+				*display: inline;
+			}
+			.mekRaPhotoGallery .mekRaPGContainer {
+				position: relative;
+				height: 97px;
+				overflow: hidden;
+				display: inline-block;
+				width: 500px;
+				white-space: nowrap;
+				*zoom: 1;
+				*display: inline;
+			}
+			.mekRaPhotoGallery .mekRaPGBody {
+				display: inline-block;
+				height: 86px;
+				*zoom: 1;
+				*display: inline;
+			}
+			.mekRaPhotoGallery .mekRaPGBody a { text-decoration: none; }
+			.mekRaPhotoGallery .mekRaPGBody a img { -ms-interpolation-mode: bicubic; }
+			.mekRaPhotoGallery .mekRaPGRight {
+				display: inline-block;
+				height: 97px;
+				width: 13px;
+				vertical-align: top;
+				*zoom: 1;
+				*display: inline;
+			}
+			.mekRaPhotoGallery .mekRaPGLeft { background: #555; }
+			.mekRaPhotoGallery .mekRaPGRight { background: #555; }
+			.hidden { display: none; }
+			.mekRaScrollingLine {
+				height: 8px;
+				background: #BBBBBB;
+				width: 500px;
+				position: absolute;
+			}
+			.mekRaScroller {
+				height: 8px;
+				position: absolute;
+				display: inline-block;
+				background: #4444FF;
+				left: 0px;
+				*zoom: 1;
+				*display: inline;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="mekRaPhotoGalPageContent">
+			<div class="mekRaPhotoGallery" id="mekRaPhotoGallery1">
+				<a href="javascript:void(0)" id="mekRaPGTitleA1">
+					<h5 class="mekRaPGTitle">ГАЗ 21</h5>
+				</a>
+				<p class="mekRaPGComment">фото материалы взяты с <a href="https://ru.wikipedia.org/wiki/%D0%93%D0%90%D0%97-21">википедии</a></p>
+				<a href="javascript:void(0)" class="mekRaPGLeft" id="mekRaPGLeft1"><!----></a>
+				<div class="mekRaPGContainer" id="mekRaPGContainer1" style="width: 656px;">
+					<div class="mekRaPGBody" id="mekRaPGBody1">
+						<a href="javascript:void(0)" onclick="el_num = '1';" id="mekRaPhoto1">
+							<img src="https://upload.wikimedia.org/wikipedia/ru/thumb/a/a1/M-21-proto-1954-gv-00-08.jpg/180px-M-21-proto-1954-gv-00-08.jpg" phpage="https://upload.wikimedia.org/wikipedia/ru/a/a1/M-21-proto-1954-gv-00-08.jpg" height="86"/>
+						</a>
+						<a href="javascript:void(0)" onclick="el_num = '2';" id="mekRaPhoto2">
+							<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/GAZ-21_%281st_generation%29_%22Volga%22_in_Moscow%2C_Russia.jpg/180px-GAZ-21_%281st_generation%29_%22Volga%22_in_Moscow%2C_Russia.jpg" phpage="https://upload.wikimedia.org/wikipedia/commons/a/a0/GAZ-21_%281st_generation%29_%22Volga%22_in_Moscow%2C_Russia.jpg" height="86"/>
+						</a>
+						<a href="javascript:void(0)" onclick="el_num = '3';" id="mekRaPhoto3">
+							<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/GAZ-21_%281st_generation%29_%22Volga%22_in_Moscow_%28left_front_view%29.jpg/300px-GAZ-21_%281st_generation%29_%22Volga%22_in_Moscow_%28left_front_view%29.jpg" phpage="https://upload.wikimedia.org/wikipedia/commons/6/6b/GAZ-21_%281st_generation%29_%22Volga%22_in_Moscow_%28left_front_view%29.jpg" height="86"/>
+						</a>
+						<a href="javascript:void(0)" onclick="el_num = '4';" id="mekRaPhoto4">
+							<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/GAZ-21_%282nd_series_%22i%22%29_%22Volga%22_%28left_side_front_view%29.jpg/300px-GAZ-21_%282nd_series_%22i%22%29_%22Volga%22_%28left_side_front_view%29.jpg" phpage="https://upload.wikimedia.org/wikipedia/commons/7/77/GAZ-21_%282nd_series_%22i%22%29_%22Volga%22_%28left_side_front_view%29.jpg" height="86"/>
+						</a>
+						<a href="javascript:void(0)" onclick="el_num = '5';" id="mekRaPhoto5">
+							<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/%D0%93%D0%90%D0%97-%D0%9C21-%D0%98.jpg/302px-%D0%93%D0%90%D0%97-%D0%9C21-%D0%98.jpg" phpage="https://upload.wikimedia.org/wikipedia/commons/5/51/%D0%93%D0%90%D0%97-%D0%9C21-%D0%98.jpg" height="86"/>
+						</a>
+						<a href="javascript:void(0)" onclick="el_num = '6';" id="mekRaPhoto6">
+							<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Gaz-21I-1959-side.jpg/250px-Gaz-21I-1959-side.jpg" phpage="https://upload.wikimedia.org/wikipedia/commons/e/e5/Gaz-21I-1959-side.jpg" height="86"/>
+						</a>
+						<a href="javascript:void(0)" onclick="el_num = '7';" id="mekRaPhoto7">
+							<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/GAZ-21_%282nd_series%29_%22Volga%22_in_Nizhny_Novgorod%2C_11_June_2009_%28rear_view%29.jpg/250px-GAZ-21_%282nd_series%29_%22Volga%22_in_Nizhny_Novgorod%2C_11_June_2009_%28rear_view%29.jpg" phpage="https://upload.wikimedia.org/wikipedia/commons/d/dc/GAZ-21_%282nd_series%29_%22Volga%22_in_Nizhny_Novgorod%2C_11_June_2009_%28rear_view%29.jpg" height="86"/>
+						</a>
+						<a href="javascript:void(0)" onclick="el_num = '8';" id="mekRaPhoto8">
+							<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/GAZ-M-21_%22Volga%22_%283rd_series%29.jpg/300px-GAZ-M-21_%22Volga%22_%283rd_series%29.jpg" phpage="https://upload.wikimedia.org/wikipedia/commons/1/11/GAZ-M-21_%22Volga%22_%283rd_series%29.jpg" height="86"/>
+						</a>
+						<a href="javascript:void(0)" onclick="el_num = '9';" id="mekRaPhoto9">
+							<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Volga_GAZ-M-21_produced_between_1962_and_1965_or_Volga_GAZ-21_during_the_Szocialista_J%C3%A1m%C5%B1ipar_Gy%C3%B6ngyszemei_2008.jpg/240px-Volga_GAZ-M-21_produced_between_1962_and_1965_or_Volga_GAZ-21_during_the_Szocialista_J%C3%A1m%C5%B1ipar_Gy%C3%B6ngyszemei_2008.jpg" phpage="https://upload.wikimedia.org/wikipedia/commons/3/36/Volga_GAZ-M-21_produced_between_1962_and_1965_or_Volga_GAZ-21_during_the_Szocialista_J%C3%A1m%C5%B1ipar_Gy%C3%B6ngyszemei_2008.jpg" height="86"/>
+						</a>
+						<a href="javascript:void(0)" onclick="el_num = '10';" id="mekRaPhoto10">
+							<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Volga_GAZ-M-21_produced_between_1962_and_1965_or_Volga_GAZ-21_during_the_Szocialista_J%C3%A1m%C5%B1ipar_Gy%C3%B6ngyszemei_2008_2.jpg/240px-Volga_GAZ-M-21_produced_between_1962_and_1965_or_Volga_GAZ-21_during_the_Szocialista_J%C3%A1m%C5%B1ipar_Gy%C3%B6ngyszemei_2008_2.jpg" phpage="https://upload.wikimedia.org/wikipedia/commons/d/d4/Volga_GAZ-M-21_produced_between_1962_and_1965_or_Volga_GAZ-21_during_the_Szocialista_J%C3%A1m%C5%B1ipar_Gy%C3%B6ngyszemei_2008_2.jpg" height="86"/>
+						</a>
+						<a href="javascript:void(0)" onclick="el_num = '11';" id="mekRaPhoto11">
+							<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/GAZ-21_%22Volga%22_%28taxi_edition%29.jpg/240px-GAZ-21_%22Volga%22_%28taxi_edition%29.jpg" phpage="https://upload.wikimedia.org/wikipedia/commons/c/c2/GAZ-21_%22Volga%22_%28taxi_edition%29.jpg" height="86"/>
+						</a>
+						<a href="javascript:void(0)" onclick="el_num = '12';" id="mekRaPhoto12">
+							<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/%D0%93%D0%90%D0%98_%D0%93%D0%90%D0%97-21_%D0%B3_%D0%91%D0%B8%D0%BA%D0%B8%D0%BD_%D0%A5%D0%B0%D0%B1%D0%B0%D1%80%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9_%D0%BA%D1%80%D0%B0%D0%B9.JPG/240px-%D0%93%D0%90%D0%98_%D0%93%D0%90%D0%97-21_%D0%B3_%D0%91%D0%B8%D0%BA%D0%B8%D0%BD_%D0%A5%D0%B0%D0%B1%D0%B0%D1%80%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9_%D0%BA%D1%80%D0%B0%D0%B9.JPG" phpage="https://upload.wikimedia.org/wikipedia/commons/3/33/%D0%93%D0%90%D0%98_%D0%93%D0%90%D0%97-21_%D0%B3_%D0%91%D0%B8%D0%BA%D0%B8%D0%BD_%D0%A5%D0%B0%D0%B1%D0%B0%D1%80%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9_%D0%BA%D1%80%D0%B0%D0%B9.JPG" height="86"/>
+						</a>
+					</div>
+					<br>
+					<div class="mekRaScrollingLine" id="mekRaScrollerBar1" style="width: 656px;"></div>
+					<div class="mekRaScroller" id="mekRaScroller1" style="left: 0px; margin-left: 0px;"><spacer></spacer></div>
+				</div>
+				<a href="javascript:void(0)" class="mekRaPGRight" id="mekRaPGRight1"><!----></a><hr />
+			</div>
+		</div>
+		<div id="mekRaOneGalPageContent" class="hidden">
+			<div id="mekRaSelectedTitle">Заголовок</div>
+			<a href="javascript:void(0)" id="mekRaGalleryBack">&lt;- Назад</a>
+			<div id="mekRaSelectedComment">Комментарий</div>
+			<div id="mekRaImageHolder">
+				<a href="javascript:void(0)" id="mekRaShowSelectedPhotoPrev"></a>
+				<img id="mekRaSelectedPhoto" src="#"/>
+				<a href="javascript:void(0)" id="mekRaShowSelectedPhotoNext"></a>
+			</div>
+		</div>
+	</body>
+</html>
