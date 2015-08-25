@@ -1,0 +1,502 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<title>Пример прокрутки календаря</title>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script type="text/javascript" src="../scrollGallery.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('body').scrollGallery({
+					vertical: false,
+					body: '#calendarContent',
+					container: '#calendarContainer',
+					step: $('#calendarContainer').outerWidth()/3,
+					buttons: {
+						on: false,
+					},
+					scrollingOn: true,
+					bar: {
+						on: true,
+						scroller: '#monthScroller',
+						scrollBar: '#allYearTableHead',
+						scrollBarClickMoveToDirectionNotToPoint: false,
+						dragToStep: true,
+						scrollBarScrolling: true
+					}
+				});
+			});
+		</script>
+		<style type="text/css">
+			.mekTableTextCenter td, .mekTableTextCenter th { text-align: center; }
+			table th { color: #428bca; }
+			h4 {
+				font-size: 13px;
+				color: #428bca;
+				font-weight: bold;
+			}
+		</style>
+	</head>
+	<body>
+		<p class="text-muted">
+			Try to click on month name or drag blue square on another position or scroll when mouse above month names or calendars
+		</p>
+		<div id="monthScroller" style="height: 37px; position: absolute;">
+			<div style="position: absolute; top: 0; bottom: 0; left: 0; right: 0; border: 2px solid #428bca; border-radius: 4px;">
+				<spacer></spacer>
+			</div>
+		</div>
+		<table class="mekTableTextCenter table table-bordered">
+			<tbody>
+				<tr id="allYearTableHead">
+					<th rowspan="1" width="8%">Январь</th>
+					<th rowspan="1" width="8%">Февраль</th>
+					<th rowspan="1" width="8%">Март</th>
+					<th rowspan="1" width="8%">Апрель</th>
+					<th rowspan="1" width="8%">Май</th>
+					<th rowspan="1" width="8%">Июнь</th>
+					<th rowspan="1" width="8%">Июль</th>
+					<th rowspan="1" width="8%">Август</th>
+					<th rowspan="1" width="8%">Сентябрь</th>
+					<th rowspan="1" width="8%">Октябрь</th>
+					<th rowspan="1" width="8%">Ноябрь</th>
+					<th rowspan="1" width="8%">Декабрь</th>
+				</tr>
+				<tr>
+					<td style="padding: 0;"><table style="width: 100%;height:32px"><tbody><tr><td class="1s0s1969"><span style="width:1px;display:block"></span></td><td class="2s0s1969"><span style="width:1px;display:block"></span></td><td class="3s0s1969"><span style="width:1px;display:block"></span></td><td class="4s0s1969"><span style="width:1px;display:block"></span></td><td class="5s0s1969" evdata="Командировка с 05.01.1969 по 10.01.1969" style="cursor: pointer; background: rgb(32, 178, 170);"><span style="width:1px;display:block"></span></td><td class="6s0s1969" evdata="Командировка с 05.01.1969 по 10.01.1969" style="cursor: pointer; background: rgb(32, 178, 170);"><span style="width:1px;display:block"></span></td><td class="7s0s1969" evdata="Командировка с 05.01.1969 по 10.01.1969" style="cursor: pointer; background: rgb(32, 178, 170);"><span style="width:1px;display:block"></span></td><td class="8s0s1969" evdata="Командировка с 05.01.1969 по 10.01.1969" style="cursor: pointer; background: rgb(32, 178, 170);"><span style="width:1px;display:block"></span></td><td class="9s0s1969" evdata="Командировка с 05.01.1969 по 10.01.1969" style="cursor: pointer; background: rgb(32, 178, 170);"><span style="width:1px;display:block"></span></td><td class="10s0s1969" evdata="Командировка с 05.01.1969 по 10.01.1969" style="cursor: pointer; background: rgb(32, 178, 170);"><span style="width:1px;display:block"></span></td><td class="11s0s1969"><span style="width:1px;display:block"></span></td><td class="12s0s1969"><span style="width:1px;display:block"></span></td><td class="13s0s1969"><span style="width:1px;display:block"></span></td><td class="14s0s1969"><span style="width:1px;display:block"></span></td><td class="15s0s1969"><span style="width:1px;display:block"></span></td><td class="16s0s1969"><span style="width:1px;display:block"></span></td><td class="17s0s1969"><span style="width:1px;display:block"></span></td><td class="18s0s1969"><span style="width:1px;display:block"></span></td><td class="19s0s1969"><span style="width:1px;display:block"></span></td><td class="20s0s1969"><span style="width:1px;display:block"></span></td><td class="21s0s1969"><span style="width:1px;display:block"></span></td><td class="22s0s1969"><span style="width:1px;display:block"></span></td><td class="23s0s1969"><span style="width:1px;display:block"></span></td><td class="24s0s1969"><span style="width:1px;display:block"></span></td><td class="25s0s1969"><span style="width:1px;display:block"></span></td><td class="26s0s1969"><span style="width:1px;display:block"></span></td><td class="27s0s1969"><span style="width:1px;display:block"></span></td><td class="28s0s1969"><span style="width:1px;display:block"></span></td><td class="29s0s1969"><span style="width:1px;display:block"></span></td><td class="30s0s1969"><span style="width:1px;display:block"></span></td><td class="31s0s1969"><span style="width:1px;display:block"></span></td></tr></tbody></table></td>
+					<td style="padding: 0;"><table style="width: 100%;height:32px"><tbody><tr><td class="1s1s1969"><span style="width:1px;display:block"></span></td><td class="2s1s1969"><span style="width:1px;display:block"></span></td><td class="3s1s1969"><span style="width:1px;display:block"></span></td><td class="4s1s1969"><span style="width:1px;display:block"></span></td><td class="5s1s1969"><span style="width:1px;display:block"></span></td><td class="6s1s1969"><span style="width:1px;display:block"></span></td><td class="7s1s1969"><span style="width:1px;display:block"></span></td><td class="8s1s1969"><span style="width:1px;display:block"></span></td><td class="9s1s1969"><span style="width:1px;display:block"></span></td><td class="10s1s1969"><span style="width:1px;display:block"></span></td><td class="11s1s1969"><span style="width:1px;display:block"></span></td><td class="12s1s1969"><span style="width:1px;display:block"></span></td><td class="13s1s1969"><span style="width:1px;display:block"></span></td><td class="14s1s1969"><span style="width:1px;display:block"></span></td><td class="15s1s1969"><span style="width:1px;display:block"></span></td><td class="16s1s1969"><span style="width:1px;display:block"></span></td><td class="17s1s1969"><span style="width:1px;display:block"></span></td><td class="18s1s1969"><span style="width:1px;display:block"></span></td><td class="19s1s1969" evdata="Отпуск с 19.02.1969 по 13.03.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span style="width:1px;display:block"></span></td><td class="20s1s1969" evdata="Отпуск с 19.02.1969 по 13.03.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span style="width:1px;display:block"></span></td><td class="21s1s1969" evdata="Отпуск с 19.02.1969 по 13.03.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span style="width:1px;display:block"></span></td><td class="22s1s1969" evdata="Отпуск с 19.02.1969 по 13.03.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span style="width:1px;display:block"></span></td><td class="23s1s1969" evdata="Отпуск с 19.02.1969 по 13.03.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span style="width:1px;display:block"></span></td><td class="24s1s1969" evdata="Отпуск с 19.02.1969 по 13.03.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span style="width:1px;display:block"></span></td><td class="25s1s1969" evdata="Отпуск с 19.02.1969 по 13.03.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span style="width:1px;display:block"></span></td><td class="26s1s1969" evdata="Отпуск с 19.02.1969 по 13.03.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span style="width:1px;display:block"></span></td><td class="27s1s1969" evdata="Отпуск с 19.02.1969 по 13.03.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span style="width:1px;display:block"></span></td><td class="28s1s1969" evdata="Отпуск с 19.02.1969 по 13.03.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span style="width:1px;display:block"></span></td></tr></tbody></table></td>
+					<td style="padding: 0;"><table style="width: 100%;height:32px"><tbody><tr><td class="1s2s1969" evdata="Отпуск с 19.02.1969 по 13.03.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span style="width:1px;display:block"></span></td><td class="2s2s1969" evdata="Отпуск с 19.02.1969 по 13.03.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span style="width:1px;display:block"></span></td><td class="3s2s1969" evdata="Отпуск с 19.02.1969 по 13.03.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span style="width:1px;display:block"></span></td><td class="4s2s1969" evdata="Отпуск с 19.02.1969 по 13.03.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span style="width:1px;display:block"></span></td><td class="5s2s1969" evdata="Отпуск с 19.02.1969 по 13.03.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span style="width:1px;display:block"></span></td><td class="6s2s1969" evdata="Отпуск с 19.02.1969 по 13.03.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span style="width:1px;display:block"></span></td><td class="7s2s1969" evdata="Отпуск с 19.02.1969 по 13.03.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span style="width:1px;display:block"></span></td><td class="8s2s1969" evdata="Отпуск с 19.02.1969 по 13.03.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span style="width:1px;display:block"></span></td><td class="9s2s1969" evdata="Отпуск с 19.02.1969 по 13.03.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span style="width:1px;display:block"></span></td><td class="10s2s1969" evdata="Отпуск с 19.02.1969 по 13.03.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span style="width:1px;display:block"></span></td><td class="11s2s1969" evdata="Отпуск с 19.02.1969 по 13.03.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span style="width:1px;display:block"></span></td><td class="12s2s1969" evdata="Отпуск с 19.02.1969 по 13.03.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span style="width:1px;display:block"></span></td><td class="13s2s1969" evdata="Отпуск с 19.02.1969 по 13.03.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span style="width:1px;display:block"></span></td><td class="14s2s1969"><span style="width:1px;display:block"></span></td><td class="15s2s1969"><span style="width:1px;display:block"></span></td><td class="16s2s1969"><span style="width:1px;display:block"></span></td><td class="17s2s1969"><span style="width:1px;display:block"></span></td><td class="18s2s1969"><span style="width:1px;display:block"></span></td><td class="19s2s1969"><span style="width:1px;display:block"></span></td><td class="20s2s1969"><span style="width:1px;display:block"></span></td><td class="21s2s1969"><span style="width:1px;display:block"></span></td><td class="22s2s1969"><span style="width:1px;display:block"></span></td><td class="23s2s1969"><span style="width:1px;display:block"></span></td><td class="24s2s1969"><span style="width:1px;display:block"></span></td><td class="25s2s1969"><span style="width:1px;display:block"></span></td><td class="26s2s1969"><span style="width:1px;display:block"></span></td><td class="27s2s1969"><span style="width:1px;display:block"></span></td><td class="28s2s1969"><span style="width:1px;display:block"></span></td><td class="29s2s1969"><span style="width:1px;display:block"></span></td><td class="30s2s1969"><span style="width:1px;display:block"></span></td><td class="31s2s1969"><span style="width:1px;display:block"></span></td></tr></tbody></table></td>
+					<td style="padding: 0;"><table style="width: 100%;height:32px"><tbody><tr><td class="1s3s1969"><span style="width:1px;display:block"></span></td><td class="2s3s1969"><span style="width:1px;display:block"></span></td><td class="3s3s1969"><span style="width:1px;display:block"></span></td><td class="4s3s1969"><span style="width:1px;display:block"></span></td><td class="5s3s1969"><span style="width:1px;display:block"></span></td><td class="6s3s1969"><span style="width:1px;display:block"></span></td><td class="7s3s1969"><span style="width:1px;display:block"></span></td><td class="8s3s1969"><span style="width:1px;display:block"></span></td><td class="9s3s1969"><span style="width:1px;display:block"></span></td><td class="10s3s1969"><span style="width:1px;display:block"></span></td><td class="11s3s1969"><span style="width:1px;display:block"></span></td><td class="12s3s1969"><span style="width:1px;display:block"></span></td><td class="13s3s1969"><span style="width:1px;display:block"></span></td><td class="14s3s1969"><span style="width:1px;display:block"></span></td><td class="15s3s1969"><span style="width:1px;display:block"></span></td><td class="16s3s1969"><span style="width:1px;display:block"></span></td><td class="17s3s1969"><span style="width:1px;display:block"></span></td><td class="18s3s1969"><span style="width:1px;display:block"></span></td><td class="19s3s1969"><span style="width:1px;display:block"></span></td><td class="20s3s1969"><span style="width:1px;display:block"></span></td><td class="21s3s1969"><span style="width:1px;display:block"></span></td><td class="22s3s1969"><span style="width:1px;display:block"></span></td><td class="23s3s1969"><span style="width:1px;display:block"></span></td><td class="24s3s1969"><span style="width:1px;display:block"></span></td><td class="25s3s1969"><span style="width:1px;display:block"></span></td><td class="26s3s1969"><span style="width:1px;display:block"></span></td><td class="27s3s1969"><span style="width:1px;display:block"></span></td><td class="28s3s1969"><span style="width:1px;display:block"></span></td><td class="29s3s1969"><span style="width:1px;display:block"></span></td><td class="30s3s1969"><span style="width:1px;display:block"></span></td></tr></tbody></table></td>
+					<td style="padding: 0;"><table style="width: 100%;height:32px"><tbody><tr><td class="1s4s1969"><span style="width:1px;display:block"></span></td><td class="2s4s1969"><span style="width:1px;display:block"></span></td><td class="3s4s1969"><span style="width:1px;display:block"></span></td><td class="4s4s1969"><span style="width:1px;display:block"></span></td><td class="5s4s1969"><span style="width:1px;display:block"></span></td><td class="6s4s1969"><span style="width:1px;display:block"></span></td><td class="7s4s1969" evdata="Отпуск с 07.05.1969 по 05.06.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span style="width:1px;display:block"></span></td><td class="8s4s1969" evdata="Отпуск с 07.05.1969 по 05.06.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span style="width:1px;display:block"></span></td><td class="9s4s1969" evdata="Отпуск с 07.05.1969 по 05.06.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span style="width:1px;display:block"></span></td><td class="10s4s1969" evdata="Отпуск с 07.05.1969 по 05.06.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span style="width:1px;display:block"></span></td><td class="11s4s1969" evdata="Отпуск с 07.05.1969 по 05.06.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span style="width:1px;display:block"></span></td><td class="12s4s1969" evdata="Отпуск с 07.05.1969 по 05.06.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span style="width:1px;display:block"></span></td><td class="13s4s1969" evdata="Отпуск с 07.05.1969 по 05.06.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span style="width:1px;display:block"></span></td><td class="14s4s1969" evdata="Отпуск с 07.05.1969 по 05.06.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span style="width:1px;display:block"></span></td><td class="15s4s1969" evdata="Отпуск с 07.05.1969 по 05.06.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span style="width:1px;display:block"></span></td><td class="16s4s1969" evdata="Отпуск с 07.05.1969 по 05.06.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span style="width:1px;display:block"></span></td><td class="17s4s1969" evdata="Отпуск с 07.05.1969 по 05.06.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span style="width:1px;display:block"></span></td><td class="18s4s1969" evdata="Отпуск с 07.05.1969 по 05.06.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span style="width:1px;display:block"></span></td><td class="19s4s1969" evdata="Отпуск с 07.05.1969 по 05.06.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span style="width:1px;display:block"></span></td><td class="20s4s1969" evdata="Отпуск с 07.05.1969 по 05.06.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span style="width:1px;display:block"></span></td><td class="21s4s1969" evdata="Отпуск с 07.05.1969 по 05.06.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span style="width:1px;display:block"></span></td><td class="22s4s1969" evdata="Отпуск с 07.05.1969 по 05.06.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span style="width:1px;display:block"></span></td><td class="23s4s1969" evdata="Отпуск с 07.05.1969 по 05.06.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span style="width:1px;display:block"></span></td><td class="24s4s1969" evdata="Отпуск с 07.05.1969 по 05.06.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span style="width:1px;display:block"></span></td><td class="25s4s1969" evdata="Отпуск с 07.05.1969 по 05.06.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span style="width:1px;display:block"></span></td><td class="26s4s1969" evdata="Отпуск с 07.05.1969 по 05.06.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span style="width:1px;display:block"></span></td><td class="27s4s1969" evdata="Отпуск с 07.05.1969 по 05.06.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span style="width:1px;display:block"></span></td><td class="28s4s1969" evdata="Отпуск с 07.05.1969 по 05.06.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span style="width:1px;display:block"></span></td><td class="29s4s1969" evdata="Отпуск с 07.05.1969 по 05.06.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span style="width:1px;display:block"></span></td><td class="30s4s1969" evdata="Отпуск с 07.05.1969 по 05.06.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span style="width:1px;display:block"></span></td><td class="31s4s1969" evdata="Отпуск с 07.05.1969 по 05.06.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span style="width:1px;display:block"></span></td></tr></tbody></table></td>
+					<td style="padding: 0;"><table style="width: 100%;height:32px"><tbody><tr><td class="1s5s1969" evdata="Отпуск с 07.05.1969 по 05.06.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span style="width:1px;display:block"></span></td><td class="2s5s1969" evdata="Отпуск с 07.05.1969 по 05.06.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span style="width:1px;display:block"></span></td><td class="3s5s1969" evdata="Отпуск с 07.05.1969 по 05.06.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span style="width:1px;display:block"></span></td><td class="4s5s1969" evdata="Отпуск с 07.05.1969 по 05.06.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span style="width:1px;display:block"></span></td><td class="5s5s1969" evdata="Отпуск с 07.05.1969 по 05.06.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span style="width:1px;display:block"></span></td><td class="6s5s1969"><span style="width:1px;display:block"></span></td><td class="7s5s1969"><span style="width:1px;display:block"></span></td><td class="8s5s1969" evdata="Командировка с 08.06.1969 по 08.07.1969" style="cursor: pointer; background: rgb(32, 178, 170);"><span style="width:1px;display:block"></span></td><td class="9s5s1969" evdata="Командировка с 08.06.1969 по 08.07.1969" style="cursor: pointer; background: rgb(32, 178, 170);"><span style="width:1px;display:block"></span></td><td class="10s5s1969" evdata="Командировка с 08.06.1969 по 08.07.1969" style="cursor: pointer; background: rgb(32, 178, 170);"><span style="width:1px;display:block"></span></td><td class="11s5s1969" evdata="Командировка с 08.06.1969 по 08.07.1969" style="cursor: pointer; background: rgb(32, 178, 170);"><span style="width:1px;display:block"></span></td><td class="12s5s1969" evdata="Командировка с 08.06.1969 по 08.07.1969" style="cursor: pointer; background: rgb(32, 178, 170);"><span style="width:1px;display:block"></span></td><td class="13s5s1969" evdata="Командировка с 08.06.1969 по 08.07.1969" style="cursor: pointer; background: rgb(32, 178, 170);"><span style="width:1px;display:block"></span></td><td class="14s5s1969" evdata="Командировка с 08.06.1969 по 08.07.1969" style="cursor: pointer; background: rgb(32, 178, 170);"><span style="width:1px;display:block"></span></td><td class="15s5s1969" evdata="Командировка с 08.06.1969 по 08.07.1969" style="cursor: pointer; background: rgb(32, 178, 170);"><span style="width:1px;display:block"></span></td><td class="16s5s1969" evdata="Командировка с 08.06.1969 по 08.07.1969" style="cursor: pointer; background: rgb(32, 178, 170);"><span style="width:1px;display:block"></span></td><td class="17s5s1969" evdata="Командировка с 08.06.1969 по 08.07.1969" style="cursor: pointer; background: rgb(32, 178, 170);"><span style="width:1px;display:block"></span></td><td class="18s5s1969" evdata="Командировка с 08.06.1969 по 08.07.1969" style="cursor: pointer; background: rgb(32, 178, 170);"><span style="width:1px;display:block"></span></td><td class="19s5s1969" evdata="Командировка с 08.06.1969 по 08.07.1969" style="cursor: pointer; background: rgb(32, 178, 170);"><span style="width:1px;display:block"></span></td><td class="20s5s1969" evdata="Командировка с 08.06.1969 по 08.07.1969" style="cursor: pointer; background: rgb(32, 178, 170);"><span style="width:1px;display:block"></span></td><td class="21s5s1969" evdata="Командировка с 08.06.1969 по 08.07.1969" style="cursor: pointer; background: rgb(32, 178, 170);"><span style="width:1px;display:block"></span></td><td class="22s5s1969" evdata="Командировка с 08.06.1969 по 08.07.1969" style="cursor: pointer; background: rgb(32, 178, 170);"><span style="width:1px;display:block"></span></td><td class="23s5s1969" evdata="Командировка с 08.06.1969 по 08.07.1969" style="cursor: pointer; background: rgb(32, 178, 170);"><span style="width:1px;display:block"></span></td><td class="24s5s1969" evdata="Командировка с 08.06.1969 по 08.07.1969" style="cursor: pointer; background: rgb(32, 178, 170);"><span style="width:1px;display:block"></span></td><td class="25s5s1969" evdata="Командировка с 08.06.1969 по 08.07.1969" style="cursor: pointer; background: rgb(32, 178, 170);"><span style="width:1px;display:block"></span></td><td class="26s5s1969" evdata="Командировка с 08.06.1969 по 08.07.1969" style="cursor: pointer; background: rgb(32, 178, 170);"><span style="width:1px;display:block"></span></td><td class="27s5s1969" evdata="Командировка с 08.06.1969 по 08.07.1969" style="cursor: pointer; background: rgb(32, 178, 170);"><span style="width:1px;display:block"></span></td><td class="28s5s1969" evdata="Командировка с 08.06.1969 по 08.07.1969" style="cursor: pointer; background: rgb(32, 178, 170);"><span style="width:1px;display:block"></span></td><td class="29s5s1969" evdata="Командировка с 08.06.1969 по 08.07.1969" style="cursor: pointer; background: rgb(32, 178, 170);"><span style="width:1px;display:block"></span></td><td class="30s5s1969" evdata="Командировка с 08.06.1969 по 08.07.1969" style="cursor: pointer; background: rgb(32, 178, 170);"><span style="width:1px;display:block"></span></td></tr></tbody></table></td>
+					<td style="padding: 0;"><table style="width: 100%;height:32px"><tbody><tr><td class="1s6s1969" evdata="Командировка с 08.06.1969 по 08.07.1969" style="cursor: pointer; background: rgb(32, 178, 170);"><span style="width:1px;display:block"></span></td><td class="2s6s1969" evdata="Командировка с 08.06.1969 по 08.07.1969" style="cursor: pointer; background: rgb(32, 178, 170);"><span style="width:1px;display:block"></span></td><td class="3s6s1969" evdata="Командировка с 08.06.1969 по 08.07.1969" style="cursor: pointer; background: rgb(32, 178, 170);"><span style="width:1px;display:block"></span></td><td class="4s6s1969" evdata="Командировка с 08.06.1969 по 08.07.1969" style="cursor: pointer; background: rgb(32, 178, 170);"><span style="width:1px;display:block"></span></td><td class="5s6s1969" evdata="Командировка с 08.06.1969 по 08.07.1969" style="cursor: pointer; background: rgb(32, 178, 170);"><span style="width:1px;display:block"></span></td><td class="6s6s1969" evdata="Командировка с 08.06.1969 по 08.07.1969" style="cursor: pointer; background: rgb(32, 178, 170);"><span style="width:1px;display:block"></span></td><td class="7s6s1969" evdata="Командировка с 08.06.1969 по 08.07.1969" style="cursor: pointer; background: rgb(32, 178, 170);"><span style="width:1px;display:block"></span></td><td class="8s6s1969" evdata="Командировка с 08.06.1969 по 08.07.1969" style="cursor: pointer; background: rgb(32, 178, 170);"><span style="width:1px;display:block"></span></td><td class="9s6s1969" evdata="Больничный с 09.07.1969 по 16.07.1969" style="cursor: pointer; background: rgb(204, 204, 204);"><span style="width:1px;display:block"></span></td><td class="10s6s1969" evdata="Больничный с 09.07.1969 по 16.07.1969" style="cursor: pointer; background: rgb(204, 204, 204);"><span style="width:1px;display:block"></span></td><td class="11s6s1969" evdata="Больничный с 09.07.1969 по 16.07.1969" style="cursor: pointer; background: rgb(204, 204, 204);"><span style="width:1px;display:block"></span></td><td class="12s6s1969" evdata="Больничный с 09.07.1969 по 16.07.1969" style="cursor: pointer; background: rgb(204, 204, 204);"><span style="width:1px;display:block"></span></td><td class="13s6s1969" evdata="Больничный с 09.07.1969 по 16.07.1969" style="cursor: pointer; background: rgb(204, 204, 204);"><span style="width:1px;display:block"></span></td><td class="14s6s1969" evdata="Больничный с 09.07.1969 по 16.07.1969" style="cursor: pointer; background: rgb(204, 204, 204);"><span style="width:1px;display:block"></span></td><td class="15s6s1969" evdata="Больничный с 09.07.1969 по 16.07.1969" style="cursor: pointer; background: rgb(204, 204, 204);"><span style="width:1px;display:block"></span></td><td class="16s6s1969" evdata="Больничный с 09.07.1969 по 16.07.1969" style="cursor: pointer; background: rgb(204, 204, 204);"><span style="width:1px;display:block"></span></td><td class="17s6s1969" evdata="Отпуск с 17.07.1969 по 20.07.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span style="width:1px;display:block"></span></td><td class="18s6s1969" evdata="Отпуск с 17.07.1969 по 20.07.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span style="width:1px;display:block"></span></td><td class="19s6s1969" evdata="Отпуск с 17.07.1969 по 20.07.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span style="width:1px;display:block"></span></td><td class="20s6s1969" evdata="Отпуск с 17.07.1969 по 20.07.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span style="width:1px;display:block"></span></td><td class="21s6s1969"><span style="width:1px;display:block"></span></td><td class="22s6s1969"><span style="width:1px;display:block"></span></td><td class="23s6s1969"><span style="width:1px;display:block"></span></td><td class="24s6s1969"><span style="width:1px;display:block"></span></td><td class="25s6s1969"><span style="width:1px;display:block"></span></td><td class="26s6s1969"><span style="width:1px;display:block"></span></td><td class="27s6s1969"><span style="width:1px;display:block"></span></td><td class="28s6s1969"><span style="width:1px;display:block"></span></td><td class="29s6s1969"><span style="width:1px;display:block"></span></td><td class="30s6s1969"><span style="width:1px;display:block"></span></td><td class="31s6s1969"><span style="width:1px;display:block"></span></td></tr></tbody></table></td>
+					<td style="padding: 0;"><table style="width: 100%;height:32px"><tbody><tr><td class="1s7s1969"><span style="width:1px;display:block"></span></td><td class="2s7s1969"><span style="width:1px;display:block"></span></td><td class="3s7s1969" evdata="Отпуск с 03.08.1969 по 05.09.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span style="width:1px;display:block"></span></td><td class="4s7s1969" evdata="Отпуск с 03.08.1969 по 05.09.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span style="width:1px;display:block"></span></td><td class="5s7s1969" evdata="Отпуск с 03.08.1969 по 05.09.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span style="width:1px;display:block"></span></td><td class="6s7s1969" evdata="Отпуск с 03.08.1969 по 05.09.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span style="width:1px;display:block"></span></td><td class="7s7s1969" evdata="Отпуск с 03.08.1969 по 05.09.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span style="width:1px;display:block"></span></td><td class="8s7s1969" evdata="Отпуск с 03.08.1969 по 05.09.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span style="width:1px;display:block"></span></td><td class="9s7s1969" evdata="Отпуск с 03.08.1969 по 05.09.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span style="width:1px;display:block"></span></td><td class="10s7s1969" evdata="Отпуск с 03.08.1969 по 05.09.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span style="width:1px;display:block"></span></td><td class="11s7s1969" evdata="Отпуск с 03.08.1969 по 05.09.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span style="width:1px;display:block"></span></td><td class="12s7s1969" evdata="Отпуск с 03.08.1969 по 05.09.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span style="width:1px;display:block"></span></td><td class="13s7s1969" evdata="Отпуск с 03.08.1969 по 05.09.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span style="width:1px;display:block"></span></td><td class="14s7s1969" evdata="Отпуск с 03.08.1969 по 05.09.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span style="width:1px;display:block"></span></td><td class="15s7s1969" evdata="Отпуск с 03.08.1969 по 05.09.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span style="width:1px;display:block"></span></td><td class="16s7s1969" evdata="Отпуск с 03.08.1969 по 05.09.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span style="width:1px;display:block"></span></td><td class="17s7s1969" evdata="Отпуск с 03.08.1969 по 05.09.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span style="width:1px;display:block"></span></td><td class="18s7s1969" evdata="Отпуск с 03.08.1969 по 05.09.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span style="width:1px;display:block"></span></td><td class="19s7s1969" evdata="Отпуск с 03.08.1969 по 05.09.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span style="width:1px;display:block"></span></td><td class="20s7s1969" evdata="Отпуск с 03.08.1969 по 05.09.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span style="width:1px;display:block"></span></td><td class="21s7s1969" evdata="Отпуск с 03.08.1969 по 05.09.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span style="width:1px;display:block"></span></td><td class="22s7s1969" evdata="Отпуск с 03.08.1969 по 05.09.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span style="width:1px;display:block"></span></td><td class="23s7s1969" evdata="Отпуск с 03.08.1969 по 05.09.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span style="width:1px;display:block"></span></td><td class="24s7s1969" evdata="Отпуск с 03.08.1969 по 05.09.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span style="width:1px;display:block"></span></td><td class="25s7s1969" evdata="Отпуск с 03.08.1969 по 05.09.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span style="width:1px;display:block"></span></td><td class="26s7s1969" evdata="Отпуск с 03.08.1969 по 05.09.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span style="width:1px;display:block"></span></td><td class="27s7s1969" evdata="Отпуск с 03.08.1969 по 05.09.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span style="width:1px;display:block"></span></td><td class="28s7s1969" evdata="Отпуск с 03.08.1969 по 05.09.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span style="width:1px;display:block"></span></td><td class="29s7s1969" evdata="Отпуск с 03.08.1969 по 05.09.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span style="width:1px;display:block"></span></td><td class="30s7s1969" evdata="Отпуск с 03.08.1969 по 05.09.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span style="width:1px;display:block"></span></td><td class="31s7s1969" evdata="Отпуск с 03.08.1969 по 05.09.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span style="width:1px;display:block"></span></td></tr></tbody></table></td>
+					<td style="padding: 0;"><table style="width: 100%;height:32px"><tbody><tr><td class="1s8s1969" evdata="Отпуск с 03.08.1969 по 05.09.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span style="width:1px;display:block"></span></td><td class="2s8s1969" evdata="Отпуск с 03.08.1969 по 05.09.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span style="width:1px;display:block"></span></td><td class="3s8s1969" evdata="Отпуск с 03.08.1969 по 05.09.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span style="width:1px;display:block"></span></td><td class="4s8s1969" evdata="Отпуск с 03.08.1969 по 05.09.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span style="width:1px;display:block"></span></td><td class="5s8s1969" evdata="Отпуск с 03.08.1969 по 05.09.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span style="width:1px;display:block"></span></td><td class="6s8s1969"><span style="width:1px;display:block"></span></td><td class="7s8s1969"><span style="width:1px;display:block"></span></td><td class="8s8s1969"><span style="width:1px;display:block"></span></td><td class="9s8s1969"><span style="width:1px;display:block"></span></td><td class="10s8s1969"><span style="width:1px;display:block"></span></td><td class="11s8s1969"><span style="width:1px;display:block"></span></td><td class="12s8s1969"><span style="width:1px;display:block"></span></td><td class="13s8s1969"><span style="width:1px;display:block"></span></td><td class="14s8s1969"><span style="width:1px;display:block"></span></td><td class="15s8s1969"><span style="width:1px;display:block"></span></td><td class="16s8s1969"><span style="width:1px;display:block"></span></td><td class="17s8s1969"><span style="width:1px;display:block"></span></td><td class="18s8s1969"><span style="width:1px;display:block"></span></td><td class="19s8s1969"><span style="width:1px;display:block"></span></td><td class="20s8s1969"><span style="width:1px;display:block"></span></td><td class="21s8s1969"><span style="width:1px;display:block"></span></td><td class="22s8s1969"><span style="width:1px;display:block"></span></td><td class="23s8s1969"><span style="width:1px;display:block"></span></td><td class="24s8s1969"><span style="width:1px;display:block"></span></td><td class="25s8s1969"><span style="width:1px;display:block"></span></td><td class="26s8s1969"><span style="width:1px;display:block"></span></td><td class="27s8s1969"><span style="width:1px;display:block"></span></td><td class="28s8s1969"><span style="width:1px;display:block"></span></td><td class="29s8s1969"><span style="width:1px;display:block"></span></td><td class="30s8s1969"><span style="width:1px;display:block"></span></td></tr></tbody></table></td>
+					<td style="padding: 0;"><table style="width: 100%;height:32px"><tbody><tr><td class="1s9s1969"><span style="width:1px;display:block"></span></td><td class="2s9s1969"><span style="width:1px;display:block"></span></td><td class="3s9s1969"><span style="width:1px;display:block"></span></td><td class="4s9s1969"><span style="width:1px;display:block"></span></td><td class="5s9s1969"><span style="width:1px;display:block"></span></td><td class="6s9s1969"><span style="width:1px;display:block"></span></td><td class="7s9s1969"><span style="width:1px;display:block"></span></td><td class="8s9s1969"><span style="width:1px;display:block"></span></td><td class="9s9s1969"><span style="width:1px;display:block"></span></td><td class="10s9s1969"><span style="width:1px;display:block"></span></td><td class="11s9s1969"><span style="width:1px;display:block"></span></td><td class="12s9s1969"><span style="width:1px;display:block"></span></td><td class="13s9s1969"><span style="width:1px;display:block"></span></td><td class="14s9s1969"><span style="width:1px;display:block"></span></td><td class="15s9s1969"><span style="width:1px;display:block"></span></td><td class="16s9s1969"><span style="width:1px;display:block"></span></td><td class="17s9s1969"><span style="width:1px;display:block"></span></td><td class="18s9s1969"><span style="width:1px;display:block"></span></td><td class="19s9s1969"><span style="width:1px;display:block"></span></td><td class="20s9s1969"><span style="width:1px;display:block"></span></td><td class="21s9s1969"><span style="width:1px;display:block"></span></td><td class="22s9s1969"><span style="width:1px;display:block"></span></td><td class="23s9s1969"><span style="width:1px;display:block"></span></td><td class="24s9s1969"><span style="width:1px;display:block"></span></td><td class="25s9s1969"><span style="width:1px;display:block"></span></td><td class="26s9s1969"><span style="width:1px;display:block"></span></td><td class="27s9s1969"><span style="width:1px;display:block"></span></td><td class="28s9s1969"><span style="width:1px;display:block"></span></td><td class="29s9s1969"><span style="width:1px;display:block"></span></td><td class="30s9s1969"><span style="width:1px;display:block"></span></td><td class="31s9s1969"><span style="width:1px;display:block"></span></td></tr></tbody></table></td>
+					<td style="padding: 0;"><table style="width: 100%;height:32px"><tbody><tr><td class="1s10s1969"><span style="width:1px;display:block"></span></td><td class="2s10s1969"><span style="width:1px;display:block"></span></td><td class="3s10s1969"><span style="width:1px;display:block"></span></td><td class="4s10s1969"><span style="width:1px;display:block"></span></td><td class="5s10s1969"><span style="width:1px;display:block"></span></td><td class="6s10s1969"><span style="width:1px;display:block"></span></td><td class="7s10s1969"><span style="width:1px;display:block"></span></td><td class="8s10s1969"><span style="width:1px;display:block"></span></td><td class="9s10s1969"><span style="width:1px;display:block"></span></td><td class="10s10s1969"><span style="width:1px;display:block"></span></td><td class="11s10s1969"><span style="width:1px;display:block"></span></td><td class="12s10s1969"><span style="width:1px;display:block"></span></td><td class="13s10s1969"><span style="width:1px;display:block"></span></td><td class="14s10s1969"><span style="width:1px;display:block"></span></td><td class="15s10s1969"><span style="width:1px;display:block"></span></td><td class="16s10s1969"><span style="width:1px;display:block"></span></td><td class="17s10s1969"><span style="width:1px;display:block"></span></td><td class="18s10s1969"><span style="width:1px;display:block"></span></td><td class="19s10s1969"><span style="width:1px;display:block"></span></td><td class="20s10s1969"><span style="width:1px;display:block"></span></td><td class="21s10s1969"><span style="width:1px;display:block"></span></td><td class="22s10s1969"><span style="width:1px;display:block"></span></td><td class="23s10s1969"><span style="width:1px;display:block"></span></td><td class="24s10s1969"><span style="width:1px;display:block"></span></td><td class="25s10s1969"><span style="width:1px;display:block"></span></td><td class="26s10s1969"><span style="width:1px;display:block"></span></td><td class="27s10s1969"><span style="width:1px;display:block"></span></td><td class="28s10s1969"><span style="width:1px;display:block"></span></td><td class="29s10s1969"><span style="width:1px;display:block"></span></td><td class="30s10s1969"><span style="width:1px;display:block"></span></td></tr></tbody></table></td>
+					<td style="padding: 0;"><table style="width: 100%;height:32px"><tbody><tr><td class="1s11s1969"><span style="width:1px;display:block"></span></td><td class="2s11s1969"><span style="width:1px;display:block"></span></td><td class="3s11s1969"><span style="width:1px;display:block"></span></td><td class="4s11s1969"><span style="width:1px;display:block"></span></td><td class="5s11s1969"><span style="width:1px;display:block"></span></td><td class="6s11s1969"><span style="width:1px;display:block"></span></td><td class="7s11s1969"><span style="width:1px;display:block"></span></td><td class="8s11s1969"><span style="width:1px;display:block"></span></td><td class="9s11s1969"><span style="width:1px;display:block"></span></td><td class="10s11s1969"><span style="width:1px;display:block"></span></td><td class="11s11s1969"><span style="width:1px;display:block"></span></td><td class="12s11s1969"><span style="width:1px;display:block"></span></td><td class="13s11s1969"><span style="width:1px;display:block"></span></td><td class="14s11s1969"><span style="width:1px;display:block"></span></td><td class="15s11s1969"><span style="width:1px;display:block"></span></td><td class="16s11s1969"><span style="width:1px;display:block"></span></td><td class="17s11s1969"><span style="width:1px;display:block"></span></td><td class="18s11s1969"><span style="width:1px;display:block"></span></td><td class="19s11s1969"><span style="width:1px;display:block"></span></td><td class="20s11s1969"><span style="width:1px;display:block"></span></td><td class="21s11s1969"><span style="width:1px;display:block"></span></td><td class="22s11s1969"><span style="width:1px;display:block"></span></td><td class="23s11s1969"><span style="width:1px;display:block"></span></td><td class="24s11s1969"><span style="width:1px;display:block"></span></td><td class="25s11s1969"><span style="width:1px;display:block"></span></td><td class="26s11s1969"><span style="width:1px;display:block"></span></td><td class="27s11s1969"><span style="width:1px;display:block"></span></td><td class="28s11s1969"><span style="width:1px;display:block"></span></td><td class="29s11s1969"><span style="width:1px;display:block"></span></td><td class="30s11s1969"><span style="width:1px;display:block"></span></td><td class="31s11s1969"><span style="width:1px;display:block"></span></td></tr></tbody></table></td>
+				</tr>
+			</tbody>
+		</table>
+		<span style="color: #20b2aa; font-size: 1.2em;">&#x25cf;</span>&nbsp;Командировка &nbsp;&nbsp;&nbsp;&nbsp;
+		<span style="color: #cccccc; font-size: 1.2em;">&#x25cf;</span>&nbsp;Больничный &nbsp;&nbsp;&nbsp;&nbsp;
+		<span style="color: #4169e1; font-size: 1.2em;">&#x25cf;</span>&nbsp;Внеплановое&nbsp;отсутствие &nbsp;&nbsp;&nbsp;&nbsp;
+		<span style="color: #9abde3; font-size: 1.2em;">&#x25cf;</span>&nbsp;Отпуск &nbsp;&nbsp;&nbsp;&nbsp;
+		<span style="color: #8000ff; font-size: 1.2em;">&#x25cf;</span>&nbsp;Oтпуск&nbsp;без&nbsp;оплаты &nbsp;&nbsp;&nbsp;&nbsp;
+		<span style="color: #f9d3cd; font-size: 1.2em;">&#x25cf;</span>&nbsp;Отпуск&nbsp;по&nbsp;уходу&nbsp;за&nbsp;ребенком &nbsp;&nbsp;&nbsp;&nbsp;
+		<span style="color: #c2d69b; font-size: 1.2em;">&#x25cf;</span>&nbsp;Учебный&nbsp;отпуск &nbsp;&nbsp;&nbsp;&nbsp;
+		<br />
+		<div id="calendarContainer" style="width: 100%; overflow: hidden;">
+			<table id="calendarContent" style="width: 400%; max-width: 400%;">
+				<tbody>
+					<tr>
+						<td>
+							<center style="padding-left: 20%; padding-right: 20%;">
+								<h4>Январь`69</h4>
+								<table class="mekTableTextCenter table table-bordered table-striped">
+									<tbody>
+										<tr>
+											<th>Пн</th>
+											<th>Вт</th>
+											<th>Ср</th>
+											<th>Чт</th>
+											<th>Пт</th>
+											<th style="color:#a94442">Сб</th>
+											<th style="color:#a94442">Вс</th>
+										</tr>
+										<tr>
+											<td class="notthismonthdate"><span>&nbsp;</span></td><td class="notthismonthdate"><span>&nbsp;</span></td><td class="thismonthdate 1s0s1969"><span>1</span></td><td class="thismonthdate 2s0s1969"><span>2</span></td><td class="thismonthdate 3s0s1969"><span>3</span></td><td class="thismonthdate 4s0s1969"><span>4</span></td><td class="thismonthdate 5s0s1969" evdata="Командировка с 05.01.1969 по 10.01.1969" style="cursor: pointer; background: rgb(32, 178, 170);"><span>5</span></td>
+										</tr>
+										<tr>
+											<td class="thismonthdate 6s0s1969" evdata="Командировка с 05.01.1969 по 10.01.1969" style="cursor: pointer; background: rgb(32, 178, 170);"><span>6</span></td><td class="thismonthdate 7s0s1969" evdata="Командировка с 05.01.1969 по 10.01.1969" style="cursor: pointer; background: rgb(32, 178, 170);"><span>7</span></td><td class="thismonthdate 8s0s1969" evdata="Командировка с 05.01.1969 по 10.01.1969" style="cursor: pointer; background: rgb(32, 178, 170);"><span>8</span></td><td class="thismonthdate 9s0s1969" evdata="Командировка с 05.01.1969 по 10.01.1969" style="cursor: pointer; background: rgb(32, 178, 170);"><span>9</span></td><td class="thismonthdate 10s0s1969" evdata="Командировка с 05.01.1969 по 10.01.1969" style="cursor: pointer; background: rgb(32, 178, 170);"><span>10</span></td><td class="thismonthdate 11s0s1969"><span>11</span></td><td class="thismonthdate 12s0s1969"><span>12</span></td>
+										</tr>
+										<tr>
+											<td class="thismonthdate 13s0s1969"><span>13</span></td><td class="thismonthdate 14s0s1969"><span>14</span></td><td class="thismonthdate 15s0s1969"><span>15</span></td><td class="thismonthdate 16s0s1969"><span>16</span></td><td class="thismonthdate 17s0s1969"><span>17</span></td><td class="thismonthdate 18s0s1969"><span>18</span></td><td class="thismonthdate 19s0s1969"><span>19</span></td>
+										</tr>
+										<tr>
+											<td class="thismonthdate 20s0s1969"><span>20</span></td><td class="thismonthdate 21s0s1969"><span>21</span></td><td class="thismonthdate 22s0s1969"><span>22</span></td><td class="thismonthdate 23s0s1969"><span>23</span></td><td class="thismonthdate 24s0s1969"><span>24</span></td><td class="thismonthdate 25s0s1969"><span>25</span></td><td class="thismonthdate 26s0s1969"><span>26</span></td>
+										</tr>
+										<tr>
+											<td class="thismonthdate 27s0s1969"><span>27</span></td><td class="thismonthdate 28s0s1969"><span>28</span></td><td class="thismonthdate 29s0s1969"><span>29</span></td><td class="thismonthdate 30s0s1969"><span>30</span></td><td class="thismonthdate 31s0s1969"><span>31</span></td><td class="notthismonthdate"><span>&nbsp;</span></td><td class="notthismonthdate"><span>&nbsp;</span></td>
+										</tr>
+									</tbody>
+								</table>
+							</center>
+						</td>
+						<td>
+							<center style="padding-left: 20%; padding-right: 20%;">
+								<h4>Февраль`69</h4>
+								<table class="mekTableTextCenter table table-bordered table-striped">
+									<tbody>
+										<tr>
+											<th>Пн</th>
+											<th>Вт</th>
+											<th>Ср</th>
+											<th>Чт</th>
+											<th>Пт</th>
+											<th style="color:#a94442">Сб</th>
+											<th style="color:#a94442">Вс</th>
+										</tr>
+										<tr>
+											<td class="notthismonthdate"><span>&nbsp;</span></td><td class="notthismonthdate"><span>&nbsp;</span></td><td class="notthismonthdate"><span>&nbsp;</span></td><td class="notthismonthdate"><span>&nbsp;</span></td><td class="notthismonthdate"><span>&nbsp;</span></td><td class="thismonthdate 1s1s1969"><span>1</span></td><td class="thismonthdate 2s1s1969"><span>2</span></td>
+										</tr>
+										<tr>
+											<td class="thismonthdate 3s1s1969"><span>3</span></td><td class="thismonthdate 4s1s1969"><span>4</span></td><td class="thismonthdate 5s1s1969"><span>5</span></td><td class="thismonthdate 6s1s1969"><span>6</span></td><td class="thismonthdate 7s1s1969"><span>7</span></td><td class="thismonthdate 8s1s1969"><span>8</span></td><td class="thismonthdate 9s1s1969"><span>9</span></td>
+										</tr>
+										<tr>
+											<td class="thismonthdate 10s1s1969"><span>10</span></td><td class="thismonthdate 11s1s1969"><span>11</span></td><td class="thismonthdate 12s1s1969"><span>12</span></td><td class="thismonthdate 13s1s1969"><span>13</span></td><td class="thismonthdate 14s1s1969"><span>14</span></td><td class="thismonthdate 15s1s1969"><span>15</span></td><td class="thismonthdate 16s1s1969"><span>16</span></td>
+										</tr>
+										<tr>
+											<td class="thismonthdate 17s1s1969"><span>17</span></td><td class="thismonthdate 18s1s1969"><span>18</span></td><td class="thismonthdate 19s1s1969" evdata="Отпуск с 19.02.1969 по 13.03.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span>19</span></td><td class="thismonthdate 20s1s1969" evdata="Отпуск с 19.02.1969 по 13.03.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span>20</span></td><td class="thismonthdate 21s1s1969" evdata="Отпуск с 19.02.1969 по 13.03.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span>21</span></td><td class="thismonthdate 22s1s1969" evdata="Отпуск с 19.02.1969 по 13.03.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span>22</span></td><td class="thismonthdate 23s1s1969" evdata="Отпуск с 19.02.1969 по 13.03.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span>23</span></td>
+										</tr>
+										<tr>
+											<td class="thismonthdate 24s1s1969" evdata="Отпуск с 19.02.1969 по 13.03.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span>24</span></td><td class="thismonthdate 25s1s1969" evdata="Отпуск с 19.02.1969 по 13.03.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span>25</span></td><td class="thismonthdate 26s1s1969" evdata="Отпуск с 19.02.1969 по 13.03.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span>26</span></td><td class="thismonthdate 27s1s1969" evdata="Отпуск с 19.02.1969 по 13.03.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span>27</span></td><td class="thismonthdate 28s1s1969" evdata="Отпуск с 19.02.1969 по 13.03.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span>28</span></td><td class="notthismonthdate"><span>&nbsp;</span></td><td class="notthismonthdate"><span>&nbsp;</span></td>
+										</tr>
+									</tbody>
+								</table>
+							</center>
+						</td>
+						<td>
+							<center style="padding-left: 20%; padding-right: 20%;">
+								<h4>Март`69</h4>
+								<table class="mekTableTextCenter table table-bordered table-striped">
+									<tbody>
+										<tr>
+											<th>Пн</th>
+											<th>Вт</th>
+											<th>Ср</th>
+											<th>Чт</th>
+											<th>Пт</th>
+											<th style="color:#a94442">Сб</th>
+											<th style="color:#a94442">Вс</th>
+										</tr>
+										<tr>
+											<td class="notthismonthdate"><span>&nbsp;</span></td><td class="notthismonthdate"><span>&nbsp;</span></td><td class="notthismonthdate"><span>&nbsp;</span></td><td class="notthismonthdate"><span>&nbsp;</span></td><td class="notthismonthdate"><span>&nbsp;</span></td><td class="thismonthdate 1s2s1969" evdata="Отпуск с 19.02.1969 по 13.03.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span>1</span></td><td class="thismonthdate 2s2s1969" evdata="Отпуск с 19.02.1969 по 13.03.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span>2</span></td>
+										</tr>
+										<tr>
+											<td class="thismonthdate 3s2s1969" evdata="Отпуск с 19.02.1969 по 13.03.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span>3</span></td><td class="thismonthdate 4s2s1969" evdata="Отпуск с 19.02.1969 по 13.03.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span>4</span></td><td class="thismonthdate 5s2s1969" evdata="Отпуск с 19.02.1969 по 13.03.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span>5</span></td><td class="thismonthdate 6s2s1969" evdata="Отпуск с 19.02.1969 по 13.03.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span>6</span></td><td class="thismonthdate 7s2s1969" evdata="Отпуск с 19.02.1969 по 13.03.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span>7</span></td><td class="thismonthdate 8s2s1969" evdata="Отпуск с 19.02.1969 по 13.03.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span>8</span></td><td class="thismonthdate 9s2s1969" evdata="Отпуск с 19.02.1969 по 13.03.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span>9</span></td>
+										</tr>
+										<tr>
+											<td class="thismonthdate 10s2s1969" evdata="Отпуск с 19.02.1969 по 13.03.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span>10</span></td><td class="thismonthdate 11s2s1969" evdata="Отпуск с 19.02.1969 по 13.03.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span>11</span></td><td class="thismonthdate 12s2s1969" evdata="Отпуск с 19.02.1969 по 13.03.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span>12</span></td><td class="thismonthdate 13s2s1969" evdata="Отпуск с 19.02.1969 по 13.03.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span>13</span></td><td class="thismonthdate 14s2s1969"><span>14</span></td><td class="thismonthdate 15s2s1969"><span>15</span></td><td class="thismonthdate 16s2s1969"><span>16</span></td>
+										</tr>
+										<tr>
+											<td class="thismonthdate 17s2s1969"><span>17</span></td><td class="thismonthdate 18s2s1969"><span>18</span></td><td class="thismonthdate 19s2s1969"><span>19</span></td><td class="thismonthdate 20s2s1969"><span>20</span></td><td class="thismonthdate 21s2s1969"><span>21</span></td><td class="thismonthdate 22s2s1969"><span>22</span></td><td class="thismonthdate 23s2s1969"><span>23</span></td>
+										</tr>
+										<tr>
+											<td class="thismonthdate 24s2s1969"><span>24</span></td><td class="thismonthdate 25s2s1969"><span>25</span></td><td class="thismonthdate 26s2s1969"><span>26</span></td><td class="thismonthdate 27s2s1969"><span>27</span></td><td class="thismonthdate 28s2s1969"><span>28</span></td><td class="thismonthdate 29s2s1969"><span>29</span></td><td class="thismonthdate 30s2s1969"><span>30</span></td>
+										</tr>
+										<tr>
+											<td class="thismonthdate 31s2s1969"><span>31</span></td><td class="notthismonthdate"><span>&nbsp;</span></td><td class="notthismonthdate"><span>&nbsp;</span></td><td class="notthismonthdate"><span>&nbsp;</span></td><td class="notthismonthdate"><span>&nbsp;</span></td><td class="notthismonthdate"><span>&nbsp;</span></td><td class="notthismonthdate"><span>&nbsp;</span></td>
+										</tr>
+									</tbody>
+								</table>
+							</center>
+						</td>
+						<td>
+							<center style="padding-left: 20%; padding-right: 20%;">
+								<h4>Апрель`69</h4>
+								<table class="mekTableTextCenter table table-bordered table-striped">
+									<tbody>
+										<tr>
+											<th>Пн</th>
+											<th>Вт</th>
+											<th>Ср</th>
+											<th>Чт</th>
+											<th>Пт</th>
+											<th style="color:#a94442">Сб</th>
+											<th style="color:#a94442">Вс</th>
+										</tr>
+										<tr>
+											<td class="notthismonthdate"><span>&nbsp;</span></td><td class="thismonthdate 1s3s1969"><span>1</span></td><td class="thismonthdate 2s3s1969"><span>2</span></td><td class="thismonthdate 3s3s1969"><span>3</span></td><td class="thismonthdate 4s3s1969"><span>4</span></td><td class="thismonthdate 5s3s1969"><span>5</span></td><td class="thismonthdate 6s3s1969"><span>6</span></td>
+										</tr>
+										<tr>
+											<td class="thismonthdate 7s3s1969"><span>7</span></td><td class="thismonthdate 8s3s1969"><span>8</span></td><td class="thismonthdate 9s3s1969"><span>9</span></td><td class="thismonthdate 10s3s1969"><span>10</span></td><td class="thismonthdate 11s3s1969"><span>11</span></td><td class="thismonthdate 12s3s1969"><span>12</span></td><td class="thismonthdate 13s3s1969"><span>13</span></td>
+										</tr>
+										<tr>
+											<td class="thismonthdate 14s3s1969"><span>14</span></td><td class="thismonthdate 15s3s1969"><span>15</span></td><td class="thismonthdate 16s3s1969"><span>16</span></td><td class="thismonthdate 17s3s1969"><span>17</span></td><td class="thismonthdate 18s3s1969"><span>18</span></td><td class="thismonthdate 19s3s1969"><span>19</span></td><td class="thismonthdate 20s3s1969"><span>20</span></td>
+										</tr>
+										<tr>
+											<td class="thismonthdate 21s3s1969"><span>21</span></td><td class="thismonthdate 22s3s1969"><span>22</span></td><td class="thismonthdate 23s3s1969"><span>23</span></td><td class="thismonthdate 24s3s1969"><span>24</span></td><td class="thismonthdate 25s3s1969"><span>25</span></td><td class="thismonthdate 26s3s1969"><span>26</span></td><td class="thismonthdate 27s3s1969"><span>27</span></td>
+										</tr>
+										<tr>
+											<td class="thismonthdate 28s3s1969"><span>28</span></td><td class="thismonthdate 29s3s1969"><span>29</span></td><td class="thismonthdate 30s3s1969"><span>30</span></td><td class="notthismonthdate"><span>&nbsp;</span></td><td class="notthismonthdate"><span>&nbsp;</span></td><td class="notthismonthdate"><span>&nbsp;</span></td><td class="notthismonthdate"><span>&nbsp;</span></td>
+										</tr>
+									</tbody>
+								</table>
+							</center>
+						</td>
+						<td>
+							<center style="padding-left: 20%; padding-right: 20%;">
+								<h4>Май`69</h4>
+								<table class="mekTableTextCenter table table-bordered table-striped">
+									<tbody>
+										<tr>
+											<th>Пн</th>
+											<th>Вт</th>
+											<th>Ср</th>
+											<th>Чт</th>
+											<th>Пт</th>
+											<th style="color:#a94442">Сб</th>
+											<th style="color:#a94442">Вс</th>
+										</tr>
+										<tr>
+											<td class="notthismonthdate"><span>&nbsp;</span></td><td class="notthismonthdate"><span>&nbsp;</span></td><td class="notthismonthdate"><span>&nbsp;</span></td><td class="thismonthdate 1s4s1969"><span>1</span></td><td class="thismonthdate 2s4s1969"><span>2</span></td><td class="thismonthdate 3s4s1969"><span>3</span></td><td class="thismonthdate 4s4s1969"><span>4</span></td>
+										</tr>
+										<tr>
+											<td class="thismonthdate 5s4s1969"><span>5</span></td><td class="thismonthdate 6s4s1969"><span>6</span></td><td class="thismonthdate 7s4s1969" evdata="Отпуск с 07.05.1969 по 05.06.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span>7</span></td><td class="thismonthdate 8s4s1969" evdata="Отпуск с 07.05.1969 по 05.06.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span>8</span></td><td class="thismonthdate 9s4s1969" evdata="Отпуск с 07.05.1969 по 05.06.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span>9</span></td><td class="thismonthdate 10s4s1969" evdata="Отпуск с 07.05.1969 по 05.06.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span>10</span></td><td class="thismonthdate 11s4s1969" evdata="Отпуск с 07.05.1969 по 05.06.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span>11</span></td>
+										</tr>
+										<tr>
+											<td class="thismonthdate 12s4s1969" evdata="Отпуск с 07.05.1969 по 05.06.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span>12</span></td><td class="thismonthdate 13s4s1969" evdata="Отпуск с 07.05.1969 по 05.06.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span>13</span></td><td class="thismonthdate 14s4s1969" evdata="Отпуск с 07.05.1969 по 05.06.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span>14</span></td><td class="thismonthdate 15s4s1969" evdata="Отпуск с 07.05.1969 по 05.06.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span>15</span></td><td class="thismonthdate 16s4s1969" evdata="Отпуск с 07.05.1969 по 05.06.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span>16</span></td><td class="thismonthdate 17s4s1969" evdata="Отпуск с 07.05.1969 по 05.06.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span>17</span></td><td class="thismonthdate 18s4s1969" evdata="Отпуск с 07.05.1969 по 05.06.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span>18</span></td>
+										</tr>
+										<tr>
+											<td class="thismonthdate 19s4s1969" evdata="Отпуск с 07.05.1969 по 05.06.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span>19</span></td><td class="thismonthdate 20s4s1969" evdata="Отпуск с 07.05.1969 по 05.06.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span>20</span></td><td class="thismonthdate 21s4s1969" evdata="Отпуск с 07.05.1969 по 05.06.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span>21</span></td><td class="thismonthdate 22s4s1969" evdata="Отпуск с 07.05.1969 по 05.06.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span>22</span></td><td class="thismonthdate 23s4s1969" evdata="Отпуск с 07.05.1969 по 05.06.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span>23</span></td><td class="thismonthdate 24s4s1969" evdata="Отпуск с 07.05.1969 по 05.06.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span>24</span></td><td class="thismonthdate 25s4s1969" evdata="Отпуск с 07.05.1969 по 05.06.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span>25</span></td>
+										</tr>
+										<tr>
+											<td class="thismonthdate 26s4s1969" evdata="Отпуск с 07.05.1969 по 05.06.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span>26</span></td><td class="thismonthdate 27s4s1969" evdata="Отпуск с 07.05.1969 по 05.06.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span>27</span></td><td class="thismonthdate 28s4s1969" evdata="Отпуск с 07.05.1969 по 05.06.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span>28</span></td><td class="thismonthdate 29s4s1969" evdata="Отпуск с 07.05.1969 по 05.06.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span>29</span></td><td class="thismonthdate 30s4s1969" evdata="Отпуск с 07.05.1969 по 05.06.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span>30</span></td><td class="thismonthdate 31s4s1969" evdata="Отпуск с 07.05.1969 по 05.06.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span>31</span></td><td class="notthismonthdate"><span>&nbsp;</span></td>
+										</tr>
+									</tbody>
+								</table>
+							</center>
+						</td>
+						<td>
+							<center style="padding-left: 20%; padding-right: 20%;">
+								<h4>Июнь`69</h4>
+								<table class="mekTableTextCenter table table-bordered table-striped">
+									<tbody>
+										<tr>
+											<th>Пн</th>
+											<th>Вт</th>
+											<th>Ср</th>
+											<th>Чт</th>
+											<th>Пт</th>
+											<th style="color:#a94442">Сб</th>
+											<th style="color:#a94442">Вс</th>
+										</tr>
+										<tr>
+											<td class="notthismonthdate"><span>&nbsp;</span></td><td class="notthismonthdate"><span>&nbsp;</span></td><td class="notthismonthdate"><span>&nbsp;</span></td><td class="notthismonthdate"><span>&nbsp;</span></td><td class="notthismonthdate"><span>&nbsp;</span></td><td class="notthismonthdate"><span>&nbsp;</span></td><td class="thismonthdate 1s5s1969" evdata="Отпуск с 07.05.1969 по 05.06.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span>1</span></td>
+										</tr>
+										<tr>
+											<td class="thismonthdate 2s5s1969" evdata="Отпуск с 07.05.1969 по 05.06.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span>2</span></td><td class="thismonthdate 3s5s1969" evdata="Отпуск с 07.05.1969 по 05.06.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span>3</span></td><td class="thismonthdate 4s5s1969" evdata="Отпуск с 07.05.1969 по 05.06.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span>4</span></td><td class="thismonthdate 5s5s1969" evdata="Отпуск с 07.05.1969 по 05.06.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span>5</span></td><td class="thismonthdate 6s5s1969"><span>6</span></td><td class="thismonthdate 7s5s1969"><span>7</span></td><td class="thismonthdate 8s5s1969" evdata="Командировка с 08.06.1969 по 08.07.1969" style="cursor: pointer; background: rgb(32, 178, 170);"><span>8</span></td>
+										</tr>
+										<tr>
+											<td class="thismonthdate 9s5s1969" evdata="Командировка с 08.06.1969 по 08.07.1969" style="cursor: pointer; background: rgb(32, 178, 170);"><span>9</span></td><td class="thismonthdate 10s5s1969" evdata="Командировка с 08.06.1969 по 08.07.1969" style="cursor: pointer; background: rgb(32, 178, 170);"><span>10</span></td><td class="thismonthdate 11s5s1969" evdata="Командировка с 08.06.1969 по 08.07.1969" style="cursor: pointer; background: rgb(32, 178, 170);"><span>11</span></td><td class="thismonthdate 12s5s1969" evdata="Командировка с 08.06.1969 по 08.07.1969" style="cursor: pointer; background: rgb(32, 178, 170);"><span>12</span></td><td class="thismonthdate 13s5s1969" evdata="Командировка с 08.06.1969 по 08.07.1969" style="cursor: pointer; background: rgb(32, 178, 170);"><span>13</span></td><td class="thismonthdate 14s5s1969" evdata="Командировка с 08.06.1969 по 08.07.1969" style="cursor: pointer; background: rgb(32, 178, 170);"><span>14</span></td><td class="thismonthdate 15s5s1969" evdata="Командировка с 08.06.1969 по 08.07.1969" style="cursor: pointer; background: rgb(32, 178, 170);"><span>15</span></td>
+										</tr>
+										<tr>
+											<td class="thismonthdate 16s5s1969" evdata="Командировка с 08.06.1969 по 08.07.1969" style="cursor: pointer; background: rgb(32, 178, 170);"><span>16</span></td><td class="thismonthdate 17s5s1969" evdata="Командировка с 08.06.1969 по 08.07.1969" style="cursor: pointer; background: rgb(32, 178, 170);"><span>17</span></td><td class="thismonthdate 18s5s1969" evdata="Командировка с 08.06.1969 по 08.07.1969" style="cursor: pointer; background: rgb(32, 178, 170);"><span>18</span></td><td class="thismonthdate 19s5s1969" evdata="Командировка с 08.06.1969 по 08.07.1969" style="cursor: pointer; background: rgb(32, 178, 170);"><span>19</span></td><td class="thismonthdate 20s5s1969" evdata="Командировка с 08.06.1969 по 08.07.1969" style="cursor: pointer; background: rgb(32, 178, 170);"><span>20</span></td><td class="thismonthdate 21s5s1969" evdata="Командировка с 08.06.1969 по 08.07.1969" style="cursor: pointer; background: rgb(32, 178, 170);"><span>21</span></td><td class="thismonthdate 22s5s1969" evdata="Командировка с 08.06.1969 по 08.07.1969" style="cursor: pointer; background: rgb(32, 178, 170);"><span>22</span></td>
+										</tr>
+										<tr>
+											<td class="thismonthdate 23s5s1969" evdata="Командировка с 08.06.1969 по 08.07.1969" style="cursor: pointer; background: rgb(32, 178, 170);"><span>23</span></td><td class="thismonthdate 24s5s1969" evdata="Командировка с 08.06.1969 по 08.07.1969" style="cursor: pointer; background: rgb(32, 178, 170);"><span>24</span></td><td class="thismonthdate 25s5s1969" evdata="Командировка с 08.06.1969 по 08.07.1969" style="cursor: pointer; background: rgb(32, 178, 170);"><span>25</span></td><td class="thismonthdate 26s5s1969" evdata="Командировка с 08.06.1969 по 08.07.1969" style="cursor: pointer; background: rgb(32, 178, 170);"><span>26</span></td><td class="thismonthdate 27s5s1969" evdata="Командировка с 08.06.1969 по 08.07.1969" style="cursor: pointer; background: rgb(32, 178, 170);"><span>27</span></td><td class="thismonthdate 28s5s1969" evdata="Командировка с 08.06.1969 по 08.07.1969" style="cursor: pointer; background: rgb(32, 178, 170);"><span>28</span></td><td class="thismonthdate 29s5s1969" evdata="Командировка с 08.06.1969 по 08.07.1969" style="cursor: pointer; background: rgb(32, 178, 170);"><span>29</span></td>
+										</tr>
+										<tr>
+											<td class="thismonthdate 30s5s1969" evdata="Командировка с 08.06.1969 по 08.07.1969" style="cursor: pointer; background: rgb(32, 178, 170);"><span>30</span></td><td class="notthismonthdate"><span>&nbsp;</span></td><td class="notthismonthdate"><span>&nbsp;</span></td><td class="notthismonthdate"><span>&nbsp;</span></td><td class="notthismonthdate"><span>&nbsp;</span></td><td class="notthismonthdate"><span>&nbsp;</span></td><td class="notthismonthdate"><span>&nbsp;</span></td>
+										</tr>
+									</tbody>
+								</table>
+							</center>
+						</td>
+						<td>
+							<center style="padding-left: 20%; padding-right: 20%;">
+								<h4>Июль`69</h4>
+								<table class="mekTableTextCenter table table-bordered table-striped">
+									<tbody>
+										<tr>
+											<th>Пн</th>
+											<th>Вт</th>
+											<th>Ср</th>
+											<th>Чт</th>
+											<th>Пт</th>
+											<th style="color:#a94442">Сб</th>
+											<th style="color:#a94442">Вс</th>
+										</tr>
+										<tr>
+											<td class="notthismonthdate"><span>&nbsp;</span></td><td class="thismonthdate 1s6s1969" evdata="Командировка с 08.06.1969 по 08.07.1969" style="cursor: pointer; background: rgb(32, 178, 170);"><span>1</span></td><td class="thismonthdate 2s6s1969" evdata="Командировка с 08.06.1969 по 08.07.1969" style="cursor: pointer; background: rgb(32, 178, 170);"><span>2</span></td><td class="thismonthdate 3s6s1969" evdata="Командировка с 08.06.1969 по 08.07.1969" style="cursor: pointer; background: rgb(32, 178, 170);"><span>3</span></td><td class="thismonthdate 4s6s1969" evdata="Командировка с 08.06.1969 по 08.07.1969" style="cursor: pointer; background: rgb(32, 178, 170);"><span>4</span></td><td class="thismonthdate 5s6s1969" evdata="Командировка с 08.06.1969 по 08.07.1969" style="cursor: pointer; background: rgb(32, 178, 170);"><span>5</span></td><td class="thismonthdate 6s6s1969" evdata="Командировка с 08.06.1969 по 08.07.1969" style="cursor: pointer; background: rgb(32, 178, 170);"><span>6</span></td>
+										</tr>
+										<tr>
+											<td class="thismonthdate 7s6s1969" evdata="Командировка с 08.06.1969 по 08.07.1969" style="cursor: pointer; background: rgb(32, 178, 170);"><span>7</span></td><td class="thismonthdate 8s6s1969" evdata="Командировка с 08.06.1969 по 08.07.1969" style="cursor: pointer; background: rgb(32, 178, 170);"><span>8</span></td><td class="thismonthdate 9s6s1969" evdata="Больничный с 09.07.1969 по 16.07.1969" style="cursor: pointer; background: rgb(204, 204, 204);"><span>9</span></td><td class="thismonthdate 10s6s1969" evdata="Больничный с 09.07.1969 по 16.07.1969" style="cursor: pointer; background: rgb(204, 204, 204);"><span>10</span></td><td class="thismonthdate 11s6s1969" evdata="Больничный с 09.07.1969 по 16.07.1969" style="cursor: pointer; background: rgb(204, 204, 204);"><span>11</span></td><td class="thismonthdate 12s6s1969" evdata="Больничный с 09.07.1969 по 16.07.1969" style="cursor: pointer; background: rgb(204, 204, 204);"><span>12</span></td><td class="thismonthdate 13s6s1969" evdata="Больничный с 09.07.1969 по 16.07.1969" style="cursor: pointer; background: rgb(204, 204, 204);"><span>13</span></td>
+										</tr>
+										<tr>
+											<td class="thismonthdate 14s6s1969" evdata="Больничный с 09.07.1969 по 16.07.1969" style="cursor: pointer; background: rgb(204, 204, 204);"><span>14</span></td><td class="thismonthdate 15s6s1969" evdata="Больничный с 09.07.1969 по 16.07.1969" style="cursor: pointer; background: rgb(204, 204, 204);"><span>15</span></td><td class="thismonthdate 16s6s1969" evdata="Больничный с 09.07.1969 по 16.07.1969" style="cursor: pointer; background: rgb(204, 204, 204);"><span>16</span></td><td class="thismonthdate 17s6s1969" evdata="Отпуск с 17.07.1969 по 20.07.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span>17</span></td><td class="thismonthdate 18s6s1969" evdata="Отпуск с 17.07.1969 по 20.07.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span>18</span></td><td class="thismonthdate 19s6s1969" evdata="Отпуск с 17.07.1969 по 20.07.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span>19</span></td><td class="thismonthdate 20s6s1969" evdata="Отпуск с 17.07.1969 по 20.07.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span>20</span></td>
+										</tr>
+										<tr>
+											<td class="thismonthdate 21s6s1969"><span>21</span></td><td class="thismonthdate 22s6s1969"><span>22</span></td><td class="thismonthdate 23s6s1969"><span>23</span></td><td class="thismonthdate 24s6s1969"><span>24</span></td><td class="thismonthdate 25s6s1969"><span>25</span></td><td class="thismonthdate 26s6s1969"><span>26</span></td><td class="thismonthdate 27s6s1969"><span>27</span></td>
+										</tr>
+										<tr>
+											<td class="thismonthdate 28s6s1969"><span>28</span></td><td class="thismonthdate 29s6s1969"><span>29</span></td><td class="thismonthdate 30s6s1969"><span>30</span></td><td class="thismonthdate 31s6s1969"><span>31</span></td><td class="notthismonthdate"><span>&nbsp;</span></td><td class="notthismonthdate"><span>&nbsp;</span></td><td class="notthismonthdate"><span>&nbsp;</span></td>
+										</tr>
+									</tbody>
+								</table>
+							</center>
+						</td>
+						<td>
+							<center style="padding-left: 20%; padding-right: 20%;">
+								<h4>Август`69</h4>
+								<table class="mekTableTextCenter table table-bordered table-striped">
+									<tbody>
+										<tr>
+											<th>Пн</th>
+											<th>Вт</th>
+											<th>Ср</th>
+											<th>Чт</th>
+											<th>Пт</th>
+											<th style="color:#a94442">Сб</th>
+											<th style="color:#a94442">Вс</th>
+										</tr>
+										<tr>
+											<td class="notthismonthdate"><span>&nbsp;</span></td><td class="notthismonthdate"><span>&nbsp;</span></td><td class="notthismonthdate"><span>&nbsp;</span></td><td class="notthismonthdate"><span>&nbsp;</span></td><td class="thismonthdate 1s7s1969"><span>1</span></td><td class="thismonthdate 2s7s1969"><span>2</span></td><td class="thismonthdate 3s7s1969" evdata="Отпуск с 03.08.1969 по 05.09.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span>3</span></td>
+										</tr>
+										<tr>
+											<td class="thismonthdate 4s7s1969" evdata="Отпуск с 03.08.1969 по 05.09.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span>4</span></td><td class="thismonthdate 5s7s1969" evdata="Отпуск с 03.08.1969 по 05.09.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span>5</span></td><td class="thismonthdate 6s7s1969" evdata="Отпуск с 03.08.1969 по 05.09.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span>6</span></td><td class="thismonthdate 7s7s1969" evdata="Отпуск с 03.08.1969 по 05.09.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span>7</span></td><td class="thismonthdate 8s7s1969" evdata="Отпуск с 03.08.1969 по 05.09.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span>8</span></td><td class="thismonthdate 9s7s1969" evdata="Отпуск с 03.08.1969 по 05.09.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span>9</span></td><td class="thismonthdate 10s7s1969" evdata="Отпуск с 03.08.1969 по 05.09.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span>10</span></td>
+										</tr>
+										<tr>
+											<td class="thismonthdate 11s7s1969" evdata="Отпуск с 03.08.1969 по 05.09.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span>11</span></td><td class="thismonthdate 12s7s1969" evdata="Отпуск с 03.08.1969 по 05.09.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span>12</span></td><td class="thismonthdate 13s7s1969" evdata="Отпуск с 03.08.1969 по 05.09.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span>13</span></td><td class="thismonthdate 14s7s1969" evdata="Отпуск с 03.08.1969 по 05.09.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span>14</span></td><td class="thismonthdate 15s7s1969" evdata="Отпуск с 03.08.1969 по 05.09.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span>15</span></td><td class="thismonthdate 16s7s1969" evdata="Отпуск с 03.08.1969 по 05.09.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span>16</span></td><td class="thismonthdate 17s7s1969" evdata="Отпуск с 03.08.1969 по 05.09.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span>17</span></td>
+										</tr>
+										<tr>
+											<td class="thismonthdate 18s7s1969" evdata="Отпуск с 03.08.1969 по 05.09.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span>18</span></td><td class="thismonthdate 19s7s1969" evdata="Отпуск с 03.08.1969 по 05.09.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span>19</span></td><td class="thismonthdate 20s7s1969" evdata="Отпуск с 03.08.1969 по 05.09.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span>20</span></td><td class="thismonthdate 21s7s1969" evdata="Отпуск с 03.08.1969 по 05.09.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span>21</span></td><td class="thismonthdate 22s7s1969" evdata="Отпуск с 03.08.1969 по 05.09.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span>22</span></td><td class="thismonthdate 23s7s1969" evdata="Отпуск с 03.08.1969 по 05.09.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span>23</span></td><td class="thismonthdate 24s7s1969" evdata="Отпуск с 03.08.1969 по 05.09.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span>24</span></td>
+										</tr>
+										<tr>
+											<td class="thismonthdate 25s7s1969" evdata="Отпуск с 03.08.1969 по 05.09.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span>25</span></td><td class="thismonthdate 26s7s1969" evdata="Отпуск с 03.08.1969 по 05.09.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span>26</span></td><td class="thismonthdate 27s7s1969" evdata="Отпуск с 03.08.1969 по 05.09.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span>27</span></td><td class="thismonthdate 28s7s1969" evdata="Отпуск с 03.08.1969 по 05.09.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span>28</span></td><td class="thismonthdate 29s7s1969" evdata="Отпуск с 03.08.1969 по 05.09.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span>29</span></td><td class="thismonthdate 30s7s1969" evdata="Отпуск с 03.08.1969 по 05.09.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span>30</span></td><td class="thismonthdate 31s7s1969" evdata="Отпуск с 03.08.1969 по 05.09.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span>31</span></td>
+										</tr>
+									</tbody>
+								</table>
+							</center>
+						</td>
+						<td>
+							<center style="padding-left: 20%; padding-right: 20%;">
+								<h4>Сентябрь`69</h4>
+								<table class="mekTableTextCenter table table-bordered table-striped">
+									<tbody>
+										<tr>
+											<th>Пн</th>
+											<th>Вт</th>
+											<th>Ср</th>
+											<th>Чт</th>
+											<th>Пт</th>
+											<th style="color:#a94442">Сб</th>
+											<th style="color:#a94442">Вс</th>
+										</tr>
+										<tr>
+											<td class="thismonthdate 1s8s1969" evdata="Отпуск с 03.08.1969 по 05.09.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span>1</span></td><td class="thismonthdate 2s8s1969" evdata="Отпуск с 03.08.1969 по 05.09.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span>2</span></td><td class="thismonthdate 3s8s1969" evdata="Отпуск с 03.08.1969 по 05.09.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span>3</span></td><td class="thismonthdate 4s8s1969" evdata="Отпуск с 03.08.1969 по 05.09.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span>4</span></td><td class="thismonthdate 5s8s1969" evdata="Отпуск с 03.08.1969 по 05.09.1969" style="cursor: pointer; background: rgb(154, 189, 227);"><span>5</span></td><td class="thismonthdate 6s8s1969"><span>6</span></td><td class="thismonthdate 7s8s1969"><span>7</span></td>
+										</tr>
+										<tr>
+											<td class="thismonthdate 8s8s1969"><span>8</span></td><td class="thismonthdate 9s8s1969"><span>9</span></td><td class="thismonthdate 10s8s1969"><span>10</span></td><td class="thismonthdate 11s8s1969"><span>11</span></td><td class="thismonthdate 12s8s1969"><span>12</span></td><td class="thismonthdate 13s8s1969"><span>13</span></td><td class="thismonthdate 14s8s1969"><span>14</span></td>
+										</tr>
+										<tr>
+											<td class="thismonthdate 15s8s1969"><span>15</span></td><td class="thismonthdate 16s8s1969"><span>16</span></td><td class="thismonthdate 17s8s1969"><span>17</span></td><td class="thismonthdate 18s8s1969"><span>18</span></td><td class="thismonthdate 19s8s1969"><span>19</span></td><td class="thismonthdate 20s8s1969"><span>20</span></td><td class="thismonthdate 21s8s1969"><span>21</span></td>
+										</tr>
+										<tr>
+											<td class="thismonthdate 22s8s1969"><span>22</span></td><td class="thismonthdate 23s8s1969"><span>23</span></td><td class="thismonthdate 24s8s1969"><span>24</span></td><td class="thismonthdate 25s8s1969"><span>25</span></td><td class="thismonthdate 26s8s1969"><span>26</span></td><td class="thismonthdate 27s8s1969"><span>27</span></td><td class="thismonthdate 28s8s1969"><span>28</span></td>
+										</tr>
+										<tr>
+											<td class="thismonthdate 29s8s1969"><span>29</span></td><td class="thismonthdate 30s8s1969"><span>30</span></td><td class="notthismonthdate"><span>&nbsp;</span></td><td class="notthismonthdate"><span>&nbsp;</span></td><td class="notthismonthdate"><span>&nbsp;</span></td><td class="notthismonthdate"><span>&nbsp;</span></td><td class="notthismonthdate"><span>&nbsp;</span></td>
+										</tr>
+									</tbody>
+								</table>
+							</center>
+						</td>
+						<td>
+							<center style="padding-left: 20%; padding-right: 20%;">
+								<h4>Октябрь`69</h4>
+								<table class="mekTableTextCenter table table-bordered table-striped">
+									<tbody>
+										<tr>
+											<th>Пн</th>
+											<th>Вт</th>
+											<th>Ср</th>
+											<th>Чт</th>
+											<th>Пт</th>
+											<th style="color:#a94442">Сб</th>
+											<th style="color:#a94442">Вс</th>
+										</tr>
+										<tr>
+											<td class="notthismonthdate"><span>&nbsp;</span></td><td class="notthismonthdate"><span>&nbsp;</span></td><td class="thismonthdate 1s9s1969"><span>1</span></td><td class="thismonthdate 2s9s1969"><span>2</span></td><td class="thismonthdate 3s9s1969"><span>3</span></td><td class="thismonthdate 4s9s1969"><span>4</span></td><td class="thismonthdate 5s9s1969"><span>5</span></td>
+										</tr>
+										<tr>
+											<td class="thismonthdate 6s9s1969"><span>6</span></td><td class="thismonthdate 7s9s1969"><span>7</span></td><td class="thismonthdate 8s9s1969"><span>8</span></td><td class="thismonthdate 9s9s1969"><span>9</span></td><td class="thismonthdate 10s9s1969"><span>10</span></td><td class="thismonthdate 11s9s1969"><span>11</span></td><td class="thismonthdate 12s9s1969"><span>12</span></td>
+										</tr>
+										<tr>
+											<td class="thismonthdate 13s9s1969"><span>13</span></td><td class="thismonthdate 14s9s1969"><span>14</span></td><td class="thismonthdate 15s9s1969"><span>15</span></td><td class="thismonthdate 16s9s1969"><span>16</span></td><td class="thismonthdate 17s9s1969"><span>17</span></td><td class="thismonthdate 18s9s1969"><span>18</span></td><td class="thismonthdate 19s9s1969"><span>19</span></td>
+										</tr>
+										<tr>
+											<td class="thismonthdate 20s9s1969"><span>20</span></td><td class="thismonthdate 21s9s1969"><span>21</span></td><td class="thismonthdate 22s9s1969"><span>22</span></td><td class="thismonthdate 23s9s1969"><span>23</span></td><td class="thismonthdate 24s9s1969"><span>24</span></td><td class="thismonthdate 25s9s1969"><span>25</span></td><td class="thismonthdate 26s9s1969"><span>26</span></td>
+										</tr>
+										<tr>
+											<td class="thismonthdate 27s9s1969"><span>27</span></td><td class="thismonthdate 28s9s1969"><span>28</span></td><td class="thismonthdate 29s9s1969"><span>29</span></td><td class="thismonthdate 30s9s1969"><span>30</span></td><td class="thismonthdate 31s9s1969"><span>31</span></td><td class="notthismonthdate"><span>&nbsp;</span></td><td class="notthismonthdate"><span>&nbsp;</span></td>
+										</tr>
+									</tbody>
+								</table>
+							</center>
+						</td>
+						<td>
+							<center style="padding-left: 20%; padding-right: 20%;">
+								<h4>Ноябрь`69</h4>
+								<table class="mekTableTextCenter table table-bordered table-striped">
+									<tbody>
+										<tr>
+											<th>Пн</th>
+											<th>Вт</th>
+											<th>Ср</th>
+											<th>Чт</th>
+											<th>Пт</th>
+											<th style="color:#a94442">Сб</th>
+											<th style="color:#a94442">Вс</th>
+										</tr>
+										<tr>
+											<td class="notthismonthdate"><span>&nbsp;</span></td><td class="notthismonthdate"><span>&nbsp;</span></td><td class="notthismonthdate"><span>&nbsp;</span></td><td class="notthismonthdate"><span>&nbsp;</span></td><td class="notthismonthdate"><span>&nbsp;</span></td><td class="thismonthdate 1s10s1969"><span>1</span></td><td class="thismonthdate 2s10s1969"><span>2</span></td>
+										</tr>
+										<tr>
+											<td class="thismonthdate 3s10s1969"><span>3</span></td><td class="thismonthdate 4s10s1969"><span>4</span></td><td class="thismonthdate 5s10s1969"><span>5</span></td><td class="thismonthdate 6s10s1969"><span>6</span></td><td class="thismonthdate 7s10s1969"><span>7</span></td><td class="thismonthdate 8s10s1969"><span>8</span></td><td class="thismonthdate 9s10s1969"><span>9</span></td>
+										</tr>
+										<tr>
+											<td class="thismonthdate 10s10s1969"><span>10</span></td><td class="thismonthdate 11s10s1969"><span>11</span></td><td class="thismonthdate 12s10s1969"><span>12</span></td><td class="thismonthdate 13s10s1969"><span>13</span></td><td class="thismonthdate 14s10s1969"><span>14</span></td><td class="thismonthdate 15s10s1969"><span>15</span></td><td class="thismonthdate 16s10s1969"><span>16</span></td>
+										</tr>
+										<tr>
+											<td class="thismonthdate 17s10s1969"><span>17</span></td><td class="thismonthdate 18s10s1969"><span>18</span></td><td class="thismonthdate 19s10s1969"><span>19</span></td><td class="thismonthdate 20s10s1969"><span>20</span></td><td class="thismonthdate 21s10s1969"><span>21</span></td><td class="thismonthdate 22s10s1969"><span>22</span></td><td class="thismonthdate 23s10s1969"><span>23</span></td>
+										</tr>
+										<tr>
+											<td class="thismonthdate 24s10s1969"><span>24</span></td><td class="thismonthdate 25s10s1969"><span>25</span></td><td class="thismonthdate 26s10s1969"><span>26</span></td><td class="thismonthdate 27s10s1969"><span>27</span></td><td class="thismonthdate 28s10s1969"><span>28</span></td><td class="thismonthdate 29s10s1969"><span>29</span></td><td class="thismonthdate 30s10s1969"><span>30</span></td>
+										</tr>
+									</tbody>
+								</table>
+							</center>
+						</td>
+						<td>
+							<center style="padding-left: 20%; padding-right: 20%;">
+								<h4>Декабрь`69</h4>
+								<table class="mekTableTextCenter table table-bordered table-striped">
+									<tbody>
+										<tr>
+											<th>Пн</th>
+											<th>Вт</th>
+											<th>Ср</th>
+											<th>Чт</th>
+											<th>Пт</th>
+											<th style="color:#a94442">Сб</th>
+											<th style="color:#a94442">Вс</th>
+										</tr>
+										<tr>
+											<td class="thismonthdate 1s11s1969"><span>1</span></td><td class="thismonthdate 2s11s1969"><span>2</span></td><td class="thismonthdate 3s11s1969"><span>3</span></td><td class="thismonthdate 4s11s1969"><span>4</span></td><td class="thismonthdate 5s11s1969"><span>5</span></td><td class="thismonthdate 6s11s1969"><span>6</span></td><td class="thismonthdate 7s11s1969"><span>7</span></td>
+										</tr>
+										<tr>
+											<td class="thismonthdate 8s11s1969"><span>8</span></td><td class="thismonthdate 9s11s1969"><span>9</span></td><td class="thismonthdate 10s11s1969"><span>10</span></td><td class="thismonthdate 11s11s1969"><span>11</span></td><td class="thismonthdate 12s11s1969"><span>12</span></td><td class="thismonthdate 13s11s1969"><span>13</span></td><td class="thismonthdate 14s11s1969"><span>14</span></td>
+										</tr>
+										<tr>
+											<td class="thismonthdate 15s11s1969"><span>15</span></td><td class="thismonthdate 16s11s1969"><span>16</span></td><td class="thismonthdate 17s11s1969"><span>17</span></td><td class="thismonthdate 18s11s1969"><span>18</span></td><td class="thismonthdate 19s11s1969"><span>19</span></td><td class="thismonthdate 20s11s1969"><span>20</span></td><td class="thismonthdate 21s11s1969"><span>21</span></td>
+										</tr>
+										<tr>
+											<td class="thismonthdate 22s11s1969"><span>22</span></td><td class="thismonthdate 23s11s1969"><span>23</span></td><td class="thismonthdate 24s11s1969"><span>24</span></td><td class="thismonthdate 25s11s1969"><span>25</span></td><td class="thismonthdate 26s11s1969"><span>26</span></td><td class="thismonthdate 27s11s1969"><span>27</span></td><td class="thismonthdate 28s11s1969"><span>28</span></td>
+										</tr>
+										<tr>
+											<td class="thismonthdate 29s11s1969"><span>29</span></td><td class="thismonthdate 30s11s1969"><span>30</span></td><td class="thismonthdate 31s11s1969"><span>31</span></td><td class="notthismonthdate"><span>&nbsp;</span></td><td class="notthismonthdate"><span>&nbsp;</span></td><td class="notthismonthdate"><span>&nbsp;</span></td><td class="notthismonthdate"><span>&nbsp;</span></td>
+										</tr>
+									</tbody>
+								</table>
+							</center>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</body>
+</html>
