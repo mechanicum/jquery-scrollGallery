@@ -3,6 +3,7 @@ Script for scroll something like photo gallery.<br />
 Has functional of forward and back buttons, mouse wheel and scroll bar click or drag.<br />
 Uses your html with your styling, does not .<br />
 Works in google chrome and ie >= 7.<br />
+[Link to source.](./scrollGallery.js)<br />
 <br />
 
 What is needed:
