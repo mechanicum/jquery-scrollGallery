@@ -28,25 +28,6 @@ $.fn.scrollGallery = function(options) {
 				dragToStep: false, // if true will drag where dragged but stops with auto-alignment by steps
 				scrollBarScrolling: false // enable scrolling by wheel on scroll bar 
 			} }, options || {});
-		// copatibily with older version
-		if (options.menuWidth)
-			options.containerWidth = options.menuWidth;
-		if (options.menuTrackWidth)
-			options.bodyWidth = options.menuTrackWidth;
-		if (options.time)
-			options.animationTime = options.time;
-		if (options.buttonOn)
-			options.buttons.on = options.buttonOn;
-		if (options.leftbtn)
-			options.buttons.leftButton = options.leftbtn;
-		if (options.rightbtn)
-			options.buttons.rightButton = options.rightbtn;
-		if (options.withBar)
-			options.bar.on = options.withBar;
-		if (options.scroller)
-			options.bar.scroller = options.scroller;
-		if (options.scroller_bar)
-			options.bar.scrollBar = options.scroller_bar;
 		// options check
 		if ($(options.body) && $(options.container) &&
 			(!options.buttons.on || (options.buttons.on && $(options.buttons.leftButton) && $(options.buttons.rightButton))) &&
