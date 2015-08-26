@@ -1,7 +1,7 @@
 # jquery-scrollGallery
 Script for scroll something like photo gallery.<br />
 Has functional of forward and back buttons, mouse wheel and scroll bar click or drag.<br />
-Uses your html with your styling, does not .<br />
+Uses your html with your styling, does not include precompiled html or css.<br />
 Works in google chrome and ie >= 7.<br />
 [Link to source.](./scrollGallery.js)<br />
 <br />
@@ -59,3 +59,10 @@ Some notes:
 - do not set scroller as child element of scroll bar or after drag it would make also click,
 - in ie < 9 first click on scroll bar or scroller move does not react if you doesn't set scroller style="margin-left: 0" (or margin-top if vertical),
 - first lines (if) is bugfix for undefined console and console.log (for ie) if you already have it on page remove this lines.
+- auto setting class "on" or "off" for buttons if we can or can't go in this direction
+<br /><br />
+
+Examples:
+-	[vertical scroll with buttons and mouse wheel on off buttons colored](https://htmlpreview.github.io/?https://github.com/mechanicum/jquery-scrollGallery/blob/master/examples/vertical.html)
+-	[photogallery with most of futures with usage of goTo from outside code](https://htmlpreview.github.io/?https://github.com/mechanicum/jquery-scrollGallery/blob/master/examples/photogallery.html)
+-	[scrolling of complex html elements whith scrolling by steps (without buttons)](https://htmlpreview.github.io/?https://github.com/mechanicum/jquery-scrollGallery/blob/master/examples/calendar.html)
