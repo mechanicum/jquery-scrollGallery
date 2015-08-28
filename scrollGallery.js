@@ -251,6 +251,29 @@ $.fn.scrollGallery = function(options) {
 					setPosition(newPosition);
 				};
 				this.goTo = goTo;
+				// destructor
+				function destroy() {
+					clearTimeout($(options.container).t);
+					if (options.buttons.on) {
+						$(context).undelegate(options.buttons.leftButton, 'mousedown');
+						$(context).undelegate(options.buttons.rightButton, 'mousedown');
+						$(document).unbind('mouseup');
+					}
+					if (options.scrollingOn) {
+						$(context).undelegate(options.container, 'mousewheel');
+					}
+					if (options.bar.on) {
+						$(context).undelegate(options.bar.scrollBar, 'click');
+						$(context).undelegate(options.bar.scroller, 'mousedown');
+						$(document).unbind('mousemove');
+						$(document).unbind('mouseup');
+						if (options.bar.scrollBarScrolling) {
+							$(context).undelegate(options.bar.scrollBar, 'mousewheel');
+							$(context).undelegate(options.bar.scroller, 'mousewheel');
+						}
+					}
+				};
+				this.destroy = destroy;
 			} else
 				console.log('size of gallery is 0');
 		} else
