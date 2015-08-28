@@ -54,6 +54,11 @@ How it works:
   ```javascript
   gal.goTo(newMarginOfGalleryBodyInPx); // goTo for outer logic
   ```
+- and to remove all delegated handlers you can use:
+  
+  ```javascript
+  gal.destroy();
+  ```
 <br />
 Some notes:
 - do not set scroller as child element of scroll bar or after drag it would make also click,
